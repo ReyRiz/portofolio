@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="projects-page">
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+    
+    <div class="container">
+        <header class="projects-header">
+            <div class="header-content">
+                <h1>My <span>Projects</span></h1>
+                <div class="header-line"></div>
+            </div>
+            <p class="header-subtitle">A collection of my work and personal projects</p>
+        </header>
+        
+        <div class="projects-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="web">Web Development</button>
+            <button class="category-btn" data-category="mobile">Mobile Apps</button>
+            <button class="category-btn" data-category="design">UI/UX Design</button>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-item" data-category="web">
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A comprehensive web application built with React and Node.js.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item" data-category="web">
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>An e-commerce platform with full payment integration and user management.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item" data-category="mobile">
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>A mobile app for tracking fitness activities and nutrition.</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item" data-category="design">
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Project Four</h3>
+                        <p>UI/UX design for a financial services dashboard application.</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item" data-category="web">
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Project Five</h3>
+                        <p>A blog platform with content management system and analytics.</p>
+                        <div class="project-tags">
+                            <span>WordPress</span>
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item" data-category="mobile">
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Project Six</h3>
+                        <p>A social media app with real-time messaging and content sharing.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Google Cloud</span>
+                        </div>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="projects-footer">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    
+                    // Update active button
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter projects
+                    projectItems.forEach(item => {
+                        if (category === 'all' || item.dataset.category === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
