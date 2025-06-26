@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Test</title>
+</head>
+<body>
+    <h1>Test Gambar untuk GitHub Pages</h1>
+    
+    <h2>Thumbnail Images:</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+        <div>
+            <h3>electricity1.jpg</h3>
+            <img src="./assets/images/electricity1.jpg" alt="electricity1" style="width: 100%; max-width: 200px;" />
+        </div>
+        <div>
+            <h3>project2.jpg</h3>
+            <img src="./assets/images/project2.jpg" alt="project2" style="width: 100%; max-width: 200px;" />
+        </div>
+        <div>
+            <h3>whatsapp1.jpg</h3>
+            <img src="./assets/images/whatsapp1.jpg" alt="whatsapp1" style="width: 100%; max-width: 200px;" />
+        </div>
+        <div>
+            <h3>shopease1.png</h3>
+            <img src="./assets/images/shopease1.png" alt="shopease1" style="width: 100%; max-width: 200px;" />
+        </div>
+        <div>
+            <h3>project6.jpg</h3>
+            <img src="./assets/images/project6.jpg" alt="project6" style="width: 100%; max-width: 200px;" />
+        </div>
+        <div>
+            <h3>redride1.png</h3>
+            <img src="./assets/images/redride1.png" alt="redride1" style="width: 100%; max-width: 200px;" />
+        </div>
+        <div>
+            <h3>scraping1.png</h3>
+            <img src="./assets/images/scraping1.png" alt="scraping1" style="width: 100%; max-width: 200px;" />
+        </div>
+        <div>
+            <h3>moodmate1.jpg</h3>
+            <img src="./assets/images/moodmate1.jpg" alt="moodmate1" style="width: 100%; max-width: 200px;" />
+        </div>
+    </div>
+
+    <script>
+        // Test JavaScript access to images
+        console.log('Testing image paths...');
+        
+        const images = document.getElementsByTagName('img');
+        Array.from(images).forEach((img, index) => {
+            img.onload = function() {
+                console.log(`✅ Image ${index + 1} loaded successfully:`, this.src);
+            };
+            img.onerror = function() {
+                console.error(`❌ Image ${index + 1} failed to load:`, this.src);
+                this.style.border = '2px solid red';
+                this.alt = 'FAILED TO LOAD: ' + this.alt;
+            };
+        });
+    </script>
+</body>
+</html>

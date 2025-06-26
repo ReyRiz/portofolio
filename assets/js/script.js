@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (featuredProjectsContainer) {
         // Wait for projectsData to be available
         if (typeof projectsData !== 'undefined') {
-            updateProjectImagePaths(); // Update paths first
+            if (typeof updateProjectImagePaths === 'function') {
+                updateProjectImagePaths(); // Update paths first
+            }
             loadFeaturedProjects(featuredProjectsContainer, projectsData);
         } else {
             console.error('projectsData is not defined');
@@ -40,7 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (projectsContainer) {
         if (typeof projectsData !== 'undefined') {
-            updateProjectImagePaths(); // Update paths first
+            if (typeof updateProjectImagePaths === 'function') {
+                updateProjectImagePaths(); // Update paths first
+            }
             loadProjects(projectsContainer, projectsData);
         } else {
             console.error('projectsData is not defined for projects container');

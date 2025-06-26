@@ -292,15 +292,22 @@ function updateProjectImagePaths() {
     const currentPath = window.location.pathname;
     const isInSubfolder = currentPath.includes('/projects/');
     
+    console.log('Current path:', currentPath);
+    console.log('Is in subfolder:', isInSubfolder);
+    
     projectsData.forEach(project => {
         // Update thumbnail path
         if (project.thumbnail) {
             if (isInSubfolder) {
                 // In subfolder, use ../ path
-                project.thumbnail = project.thumbnail.replace('./assets/', '../assets/');
+                if (project.thumbnail.startsWith('./assets/')) {
+                    project.thumbnail = project.thumbnail.replace('./assets/', '../assets/');
+                }
             } else {
                 // In root, use ./ path
-                project.thumbnail = project.thumbnail.replace('../assets/', './assets/');
+                if (project.thumbnail.startsWith('../assets/')) {
+                    project.thumbnail = project.thumbnail.replace('../assets/', './assets/');
+                }
             }
         }
         
@@ -309,18 +316,25 @@ function updateProjectImagePaths() {
             project.images = project.images.map(imagePath => {
                 if (isInSubfolder) {
                     // In subfolder, use ../ path
-                    return imagePath.replace('./assets/', '../assets/');
+                    if (imagePath.startsWith('./assets/')) {
+                        return imagePath.replace('./assets/', '../assets/');
+                    }
                 } else {
                     // In root, use ./ path
-                    return imagePath.replace('../assets/', './assets/');
+                    if (imagePath.startsWith('../assets/')) {
+                        return imagePath.replace('../assets/', './assets/');
+                    }
                 }
+                return imagePath;
             });
         }
     });
+    
+    console.log('Updated projectsData:', projectsData);
 }
 
-// Update paths immediately when script loads
-updateProjectImagePaths();
+// Don't update paths immediately - let the calling page handle it
+// updateProjectImagePaths();
 
 // Get all unique categories for filtering
 const categories = [...new Set(projectsData.map(project => project.category))];
