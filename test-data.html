@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Categories</title>
+</head>
+<body>
+    <h1>Test Categories dari project-data.js</h1>
+    <div id="categories-output"></div>
+    <div id="projects-count"></div>
+
+    <script src="./assets/js/project-data.js"></script>
+    <script>
+        console.log('Testing project-data.js...');
+        
+        // Test categories
+        console.log('Categories:', categories);
+        console.log('Projects count:', projectsData.length);
+        
+        // Display in HTML
+        document.getElementById('categories-output').innerHTML = `
+            <h2>Kategori yang ditemukan:</h2>
+            <ul>
+                ${categories.map(cat => `<li>${cat}</li>`).join('')}
+            </ul>
+        `;
+        
+        document.getElementById('projects-count').innerHTML = `
+            <h2>Total Proyek: ${projectsData.length}</h2>
+            <ul>
+                ${projectsData.map(project => `<li>${project.title} (${project.category})</li>`).join('')}
+            </ul>
+        `;
+        
+        // Test updateProjectImagePaths function
+        if (typeof updateProjectImagePaths === 'function') {
+            console.log('✅ updateProjectImagePaths function available');
+            updateProjectImagePaths();
+            console.log('✅ Path update completed');
+        } else {
+            console.error('❌ updateProjectImagePaths function not available');
+        }
+    </script>
+</body>
+</html>

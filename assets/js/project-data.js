@@ -338,3 +338,8 @@ function updateProjectImagePaths() {
 
 // Get all unique categories for filtering
 const categories = [...new Set(projectsData.map(project => project.category))];
+
+// Export data for use in other scripts
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { projectsData, categories, updateProjectImagePaths };
+}

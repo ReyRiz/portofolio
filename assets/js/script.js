@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded, projectsData available:', typeof projectsData !== 'undefined');
+    console.log('DOM loaded');
+    console.log('projectsData available:', typeof projectsData !== 'undefined');
+    console.log('categories available:', typeof categories !== 'undefined');
+    
+    if (typeof projectsData !== 'undefined') {
+        console.log('Projects count:', projectsData.length);
+    }
     
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
