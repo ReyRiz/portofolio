@@ -3,159 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | My Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Projects | Fariz Idham R.</title>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="projects-page">
-    <a href="index.html" class="back-button">
-        <i class="fas fa-arrow-left"></i> Back to Home
-    </a>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ReyRiz Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="page-header">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>A collection of my academic and personal projects</p>
+        </div>
+    </div>
     
     <div class="container">
-        <header class="projects-header">
-            <div class="header-content">
-                <h1>My <span>Projects</span></h1>
-                <div class="header-line"></div>
-            </div>
-            <p class="header-subtitle">A collection of my work and personal projects</p>
-        </header>
-        
-        <div class="projects-categories">
-            <button class="category-btn active" data-category="all">All</button>
-            <button class="category-btn" data-category="web">Web Development</button>
-            <button class="category-btn" data-category="mobile">Mobile Apps</button>
-            <button class="category-btn" data-category="design">UI/UX Design</button>
+        <div class="projects-search-box">
+            <input type="text" id="project-search" placeholder="Search projects by name, technology, or category...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
         </div>
         
-        <div class="projects-grid">
-            <div class="project-item" data-category="web">
+        <div class="projects-categories">
+            <button class="category-btn active" data-category="all">All Projects</button>
+            <button class="category-btn" data-category="datamining">Data Mining</button>
+            <button class="category-btn" data-category="webdev">Web Development</button>
+            <button class="category-btn" data-category="mobiledev">Mobile Development</button>
+            <button class="category-btn" data-category="ai">Artificial Intelligence</button>
+            <button class="category-btn" data-category="database">Database Systems</button>
+        </div>
+        
+        <div class="projects-grid" id="projects-container">
+            <!-- Data Mining Projects -->
+            <div class="project-item" data-category="datamining" data-tags="python, machine learning, pandas, sentiment analysis">
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <div class="project-img" style="background-image: url('images/project1.jpg');"></div>
+                    <div class="project-category">Data Mining</div>
                     <div class="project-info">
-                        <h3>Project One</h3>
-                        <p>A comprehensive web application built with React and Node.js.</p>
+                        <h3>Sentiment Analysis Tool</h3>
+                        <p>A machine learning project that analyzes customer reviews and classifies sentiment.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>NLP</span>
+                        </div>
+                        <a href="projects/project-detail.html?id=1" class="project-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item" data-category="datamining" data-tags="python, clustering, data visualization, k-means">
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('images/project4.jpg');"></div>
+                    <div class="project-category">Data Mining</div>
+                    <div class="project-info">
+                        <h3>Customer Segmentation</h3>
+                        <p>Using clustering algorithms to segment customers based on purchasing behavior.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>K-means</span>
+                            <span>Pandas</span>
+                        </div>
+                        <a href="projects/project-detail.html?id=4" class="project-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Web Development Projects -->
+            <div class="project-item" data-category="webdev" data-tags="javascript, react, node.js, e-commerce">
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('images/project2.jpg');"></div>
+                    <div class="project-category">Web Development</div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A fully functional online store with user authentication and payment processing.</p>
                         <div class="project-tags">
                             <span>React</span>
                             <span>Node.js</span>
                             <span>MongoDB</span>
                         </div>
-                        <a href="#" class="project-link">View Project</a>
+                        <a href="projects/project-detail.html?id=2" class="project-link">View Details</a>
                     </div>
                 </div>
             </div>
             
-            <div class="project-item" data-category="web">
+            <div class="project-item" data-category="webdev" data-tags="php, laravel, mysql, cms">
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <div class="project-img" style="background-image: url('images/project5.jpg');"></div>
+                    <div class="project-category">Web Development</div>
                     <div class="project-info">
-                        <h3>Project Two</h3>
-                        <p>An e-commerce platform with full payment integration and user management.</p>
+                        <h3>Content Management System</h3>
+                        <p>A custom CMS built with Laravel for managing digital content.</p>
                         <div class="project-tags">
-                            <span>Vue.js</span>
-                            <span>Express</span>
+                            <span>PHP</span>
+                            <span>Laravel</span>
                             <span>MySQL</span>
                         </div>
-                        <a href="#" class="project-link">View Project</a>
+                        <a href="projects/project-detail.html?id=5" class="project-link">View Details</a>
                     </div>
                 </div>
             </div>
             
-            <div class="project-item" data-category="mobile">
+            <!-- Mobile Development Projects -->
+            <div class="project-item" data-category="mobiledev" data-tags="react native, firebase, fitness, mobile app">
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <div class="project-img" style="background-image: url('images/project3.jpg');"></div>
+                    <div class="project-category">Mobile Development</div>
                     <div class="project-info">
-                        <h3>Project Three</h3>
-                        <p>A mobile app for tracking fitness activities and nutrition.</p>
+                        <h3>Fitness Tracking App</h3>
+                        <p>A mobile application for tracking workouts and nutritional information.</p>
                         <div class="project-tags">
                             <span>React Native</span>
                             <span>Firebase</span>
                             <span>Redux</span>
                         </div>
-                        <a href="#" class="project-link">View Project</a>
+                        <a href="projects/project-detail.html?id=3" class="project-link">View Details</a>
                     </div>
                 </div>
             </div>
             
-            <div class="project-item" data-category="design">
+            <!-- AI Projects -->
+            <div class="project-item" data-category="ai" data-tags="python, tensorflow, deep learning, computer vision">
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <div class="project-img" style="background-image: url('images/project6.jpg');"></div>
+                    <div class="project-category">Artificial Intelligence</div>
                     <div class="project-info">
-                        <h3>Project Four</h3>
-                        <p>UI/UX design for a financial services dashboard application.</p>
+                        <h3>Image Recognition System</h3>
+                        <p>A deep learning model that recognizes and classifies objects in images.</p>
                         <div class="project-tags">
-                            <span>Figma</span>
-                            <span>Adobe XD</span>
-                            <span>UI/UX</span>
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Computer Vision</span>
                         </div>
-                        <a href="#" class="project-link">View Project</a>
+                        <a href="projects/project-detail.html?id=6" class="project-link">View Details</a>
                     </div>
                 </div>
             </div>
             
-            <div class="project-item" data-category="web">
+            <!-- Database Systems Projects -->
+            <div class="project-item" data-category="database" data-tags="sql, database design, optimization, mysql">
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <div class="project-img" style="background-image: url('images/project7.jpg');"></div>
+                    <div class="project-category">Database Systems</div>
                     <div class="project-info">
-                        <h3>Project Five</h3>
-                        <p>A blog platform with content management system and analytics.</p>
+                        <h3>Hospital Management System</h3>
+                        <p>A database design and implementation for managing hospital operations.</p>
                         <div class="project-tags">
-                            <span>WordPress</span>
-                            <span>PHP</span>
-                            <span>JavaScript</span>
+                            <span>SQL</span>
+                            <span>MySQL</span>
+                            <span>Database Design</span>
                         </div>
-                        <a href="#" class="project-link">View Project</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-item" data-category="mobile">
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <div class="project-info">
-                        <h3>Project Six</h3>
-                        <p>A social media app with real-time messaging and content sharing.</p>
-                        <div class="project-tags">
-                            <span>Flutter</span>
-                            <span>Dart</span>
-                            <span>Google Cloud</span>
-                        </div>
-                        <a href="#" class="project-link">View Project</a>
+                        <a href="projects/project-detail.html?id=7" class="project-link">View Details</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <footer class="projects-footer">
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>YourPortfolio</h3>
+                    <p>Showcasing my journey in Computer Science</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Name. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        // Simple filtering functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const categoryBtns = document.querySelectorAll('.category-btn');
-            const projectItems = document.querySelectorAll('.project-item');
-            
-            categoryBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const category = this.dataset.category;
-                    
-                    // Update active button
-                    categoryBtns.forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // Filter projects
-                    projectItems.forEach(item => {
-                        if (category === 'all' || item.dataset.category === category) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        });
-    </script>
+    <script src="assets/js/project-data.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
