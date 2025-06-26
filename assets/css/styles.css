@@ -171,7 +171,6 @@ p {
     margin-bottom: 20px;
     font-size: 1.1rem;
     line-height: 1.8;
-    text-align: center;
 }
 
 #home {
@@ -840,7 +839,6 @@ footer {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('../images/hero-bg.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
     display: flex;
