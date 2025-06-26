@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, projectsData available:', typeof projectsData !== 'undefined');
+    
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -23,15 +25,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load featured projects on home page
     const featuredProjectsContainer = document.getElementById('featured-projects-container');
     
-    if (featuredProjectsContainer && typeof projectsData !== 'undefined') {
-        loadFeaturedProjects(featuredProjectsContainer, projectsData);
+    if (featuredProjectsContainer) {
+        // Wait for projectsData to be available
+        if (typeof projectsData !== 'undefined') {
+            updateProjectImagePaths(); // Update paths first
+            loadFeaturedProjects(featuredProjectsContainer, projectsData);
+        } else {
+            console.error('projectsData is not defined');
+        }
     }
     
     // Load projects from project-data.js
     const projectsContainer = document.getElementById('projects-container');
     
-    if (projectsContainer && typeof projectsData !== 'undefined') {
-        loadProjects(projectsContainer, projectsData);
+    if (projectsContainer) {
+        if (typeof projectsData !== 'undefined') {
+            updateProjectImagePaths(); // Update paths first
+            loadProjects(projectsContainer, projectsData);
+        } else {
+            console.error('projectsData is not defined for projects container');
+        }
     }
     
     function loadProjects(container, projects) {

@@ -1,4 +1,17 @@
 // This file contains data for all projects
+
+// Function to get correct asset path based on current location
+function getAssetPath(relativePath) {
+    const currentPath = window.location.pathname;
+    const isInSubfolder = currentPath.includes('/projects/');
+    
+    if (isInSubfolder) {
+        return '../' + relativePath;
+    } else {
+        return './' + relativePath;        
+    }
+}
+
 const projectsData = [
     {
         id: 1,
@@ -6,7 +19,7 @@ const projectsData = [
         category: "datamining",
         tags: ["Python", "Time Series", "Prediksi"],
         description: "Sistem analitik prediktif canggih untuk meramalkan konsumsi listrik menggunakan model AI/ML hybrid.",
-        thumbnail: "../assets/images/electricity1.jpg",
+        thumbnail: "./assets/images/electricity1.jpg",
         longDescription: `
             <p>EnergyPulse adalah sistem peramalan canggih yang dikembangkan sebagai bagian dari mata kuliah Data Mining. Sistem ini menggunakan kombinasi metode statistik tradisional dan teknik deep learning untuk memprediksi konsumsi listrik dengan akurasi tinggi, membantu perusahaan utilitas mengoptimalkan alokasi sumber daya dan mengurangi pemborosan.</p>
             
@@ -22,9 +35,9 @@ const projectsData = [
         `,
         challenges: "Tantangan terbesar adalah mengembangkan model yang dapat beradaptasi dengan pola musiman reguler dan kejadian tidak beraturan seperti hari libur, cuaca ekstrem, dan pergeseran ekonomi. Saya mengatasi ini dengan menciptakan arsitektur ensemble kustom yang menggabungkan kekuatan model statistik (untuk pola reguler) dengan deep learning (untuk hubungan kompleks), menggunakan meta-learner untuk secara cerdas memberikan bobot prediksi berdasarkan faktor kontekstual.",
         images: [
-            "../assets/images/project-images/electricity1.jpg", 
-            "../assets/images/project-images/electricity2.jpg", 
-            "../assets/images/project-images/electricity3.jpg"
+            "./assets/images/project-images/electricity1.jpg", 
+            "./assets/images/project-images/electricity2.jpg", 
+            "./assets/images/project-images/electricity3.jpg"
         ],
         githubLink: "https://github.com/ReyRiz/forecasting-electricity-consumption"
     },
@@ -34,7 +47,7 @@ const projectsData = [
         category: "webdev",
         tags: ["PHP", "Laravel", "Blade", "JavaScript", "E-commerce"],
         description: "Solusi e-commerce komprehensif untuk materi dan sumber daya pembelajaran bahasa.",
-        thumbnail: "../assets/images/project2.jpg",
+        thumbnail: "./assets/images/project2.jpg",
         longDescription: `
             <p>TokoLingu adalah platform e-commerce lengkap yang mengkhususkan diri pada sumber daya pembelajaran bahasa. Platform ini dikembangkan sebagai proyek capstone untuk mata kuliah Pengembangan Web, dengan fokus pada penciptaan pengalaman berbelanja yang mulus untuk para pembelajar bahasa.</p>
             
@@ -55,9 +68,9 @@ const projectsData = [
         `,
         challenges: "Tantangan signifikan adalah mengimplementasikan sistem rekomendasi yang menyarankan sumber daya pembelajaran bahasa yang relevan berdasarkan perilaku dan preferensi pengguna. Saya memecahkan ini dengan membuat algoritma collaborative filtering yang menganalisis riwayat pembelian dan pola browsing untuk menghasilkan rekomendasi yang dipersonalisasi, semuanya terintegrasi dalam ekosistem Laravel.",
         images: [
-            "../assets/images/project-images/project2-1.jpg", 
-            "../assets/images/project-images/project2-2.jpg", 
-            "../assets/images/project-images/project2-3.jpg"
+            "./assets/images/project-images/project2-1.jpg", 
+            "./assets/images/project-images/project2-2.jpg", 
+            "./assets/images/project-images/project2-3.jpg"
         ],
         githubLink: "https://github.com/ReyRiz/tokolingu-ecommerce-project"
     },
@@ -67,7 +80,7 @@ const projectsData = [
         category: "mobiledev",
         tags: ["Java", "Android", "Firebase", "Real-time Messaging"],
         description: "Aplikasi WhatsApp Clone fungsional yang dibangun dengan pengembangan Android native dengan fitur pesan real-time dan berbagi media.",
-        thumbnail: "../assets/images/whatsapp1.jpg",
+        thumbnail: "./assets/images/whatsapp1.jpg",
         longDescription: `
             <p>WhatsApp Clone ini adalah aplikasi pesan mobile berfitur lengkap yang dikembangkan sebagai proyek akhir untuk mata kuliah Pengembangan Aplikasi Mobile. Aplikasi ini mereplikasi fungsionalitas inti WhatsApp sambil mengimplementasikan praktik pengembangan Android modern.</p>
             
@@ -88,9 +101,9 @@ const projectsData = [
         `,
         challenges: "Tantangan paling signifikan adalah mengimplementasikan sistem pesan real-time yang efisien yang dapat menangani pengiriman pesan, tanda terima baca, dan kemampuan offline. Saya memecahkan ini dengan membuat sistem antrian pesan yang robust menggunakan Firebase Realtime Database dengan manajemen listener yang hati-hati dan strategi caching lokal untuk memastikan pesan disinkronkan dengan benar bahkan ketika konektivitas jaringan terputus-putus.",
         images: [
-            "../assets/images/project-images/whatsapp1.jpg", 
-            "../assets/images/project-images/whatsapp2.jpg", 
-            "../assets/images/project-images/whatsapp3.jpg"
+            "./assets/images/project-images/whatsapp1.jpg", 
+            "./assets/images/project-images/whatsapp2.jpg", 
+            "./assets/images/project-images/whatsapp3.jpg"
         ],
         githubLink: "https://github.com/ReyRiz/tugas-final-mobile"
     },
@@ -100,7 +113,7 @@ const projectsData = [
         category: "webdev",
         tags: ["React", "Node.js", "MongoDB", "E-commerce"],
         description: "Platform e-commerce modern dengan teknologi MERN stack yang menawarkan pengalaman pengguna yang mulus dan desain responsif.",
-        thumbnail: "../assets/images/shopease1.png",
+        thumbnail: "./assets/images/shopease1.png",
         longDescription: `
             <p>ShopEase adalah platform e-commerce modern yang dibangun dengan MERN stack (MongoDB, Express, React, Node.js) yang berfokus pada penciptaan pengalaman berbelanja tanpa hambatan. Proyek ini dikembangkan sebagai bagian dari mata kuliah Pengembangan Web Lanjutan, dengan penekanan pada framework JavaScript modern dan pengalaman pengguna.</p>
             
@@ -121,9 +134,9 @@ const projectsData = [
         `,
         challenges: "Tantangan signifikan adalah mengimplementasikan update inventori real-time untuk mencegah pengguna membeli barang yang sudah habis stok. Saya memecahkan ini dengan mengintegrasikan WebSockets melalui Socket.io untuk memberikan notifikasi instan tentang perubahan stok dan mengimplementasikan optimistic UI updates yang dikombinasikan dengan validasi server untuk menjaga integritas data.",
         images: [
-            "../assets/images/project-images/shopease2.png", 
-            "../assets/images/project-images/shopease3.png", 
-            "../assets/images/project-images/shopease4.png"
+            "./assets/images/project-images/shopease2.png", 
+            "./assets/images/project-images/shopease3.png", 
+            "./assets/images/project-images/shopease4.png"
         ],
         githubLink: "https://github.com/ReyRiz/shopease-project"
     },
@@ -133,7 +146,7 @@ const projectsData = [
         category: "webdev",
         tags: ["React", "Vue", "REST API", "Flask", "Dampak Sosial"],
         description: "Platform web modern untuk membuat, mengelola, dan mempromosikan kampanye sosial serta inisiatif komunitas.",
-        thumbnail: "../assets/images/project6.jpg",
+        thumbnail: "./assets/images/project6.jpg",
         longDescription: `
             <p>AksiNyata adalah platform web komprehensif yang dirancang untuk memfasilitasi kampanye sosial dan inisiatif komunitas. Proyek yang sadar sosial ini menggabungkan teknologi web modern dengan antarmuka pengguna yang intuitif untuk memungkinkan manajemen kampanye yang efektif dan keterlibatan komunitas.</p>
             
@@ -154,9 +167,9 @@ const projectsData = [
         `,
         challenges: "Tantangan utama adalah menciptakan integrasi yang mulus antara frontend React dan backend Flask sambil mempertahankan performa optimal dan pengalaman pengguna. Saya memecahkan ini dengan mengimplementasikan layer API yang terstruktur dengan baik dengan strategi caching data yang efisien dan manajemen state yang dioptimalkan menggunakan Redux. Tantangan lain adalah mengembangkan sistem pembuatan kampanye yang fleksibel yang dapat mengakomodasi berbagai jenis kampanye sambil tetap intuitif - diatasi melalui arsitektur komponen modular dengan generasi form dinamis.",
         images: [
-            "../assets/images/project-images/project6-1.jpg", 
-            "../assets/images/project-images/project6-2.jpg", 
-            "../assets/images/project-images/project6-3.jpg"
+            "./assets/images/project-images/project6-1.jpg", 
+            "./assets/images/project-images/project6-2.jpg", 
+            "./assets/images/project-images/project6-3.jpg"
         ],
         githubLink: "https://github.com/ReyRiz/AksiNyata"
     },
@@ -166,7 +179,7 @@ const projectsData = [
         category: "webdev",
         tags: ["PHP", "Laravel", "MySQL", "JavaScript", "Transportasi"],
         description: "Sistem manajemen transportasi komprehensif untuk layanan ride-hailing dan pemesanan kendaraan.",
-        thumbnail: "../assets/images/redride1.png",
+        thumbnail: "./assets/images/redride1.png",
         longDescription: `
             <p>RedRide adalah sistem manajemen transportasi berfitur lengkap yang menyediakan solusi komprehensif untuk layanan ride-hailing dan pemesanan kendaraan. Proyek ini dikembangkan untuk mendemonstrasikan kemahiran dalam pengembangan web menggunakan framework PHP modern dan manajemen database.</p>
             
@@ -186,9 +199,9 @@ const projectsData = [
         `,
         challenges: "Tidak ada tantangan yang terlalu signifikan dalam proyek ini, namun saya memastikan bahwa sistem dapat menangani beban tinggi dengan mengimplementasikan caching untuk data yang sering diakses dan optimasi query database. Saya juga mengembangkan sistem pemesanan yang fleksibel yang dapat menangani berbagai jenis kendaraan dan tarif dinamis berdasarkan kondisi lalu lintas.",
         images: [
-            "../assets/images/project-images/redride1.png", 
-            "../assets/images/project-images/redride2.png", 
-            "../assets/images/project-images/redride3.png"
+            "./assets/images/project-images/redride1.png", 
+            "./assets/images/project-images/redride2.png", 
+            "./assets/images/project-images/redride3.png"
         ],
         githubLink: "https://github.com/khalikaa/RedRide"
     },
@@ -198,7 +211,7 @@ const projectsData = [
         category: "datamining",
         tags: ["Python", "Web Scraping", "BeautifulSoup4", "Selenium"],
         description: "Proyek kumpulan script Python untuk melakukan web scraping dari berbagai sumber data dengan fokus pada scrapethissite.com.",
-        thumbnail: "../assets/images/scraping1.png",
+        thumbnail: "./assets/images/scraping1.png",
         longDescription: `
             <p>Repository ini dikembangkan sebagai bagian dari mata kuliah Data Mining Semester 3. Proyek ini bertujuan untuk mempelajari dan menerapkan teknik-teknik web scraping untuk mengumpulkan data dari berbagai sumber web, kemudian menganalisis data tersebut menggunakan teknik data mining.</p>
             
@@ -225,9 +238,9 @@ const projectsData = [
         `,
         challenges: "Tantangan utama dalam proyek ini adalah menangani berbagai jenis konten web, mulai dari HTML statis hingga konten dinamis yang dimuat dengan JavaScript. Saya mengatasi ini dengan menggunakan kombinasi BeautifulSoup4 untuk scraping HTML sederhana dan Selenium untuk menangani konten AJAX/JavaScript. Tantangan lainnya adalah memastikan data yang di-scrape akurat dan terstruktur dengan baik untuk analisis lebih lanjut.",
         images: [
-            "../assets/images/project-images/scraping1.png", 
-            "../assets/images/project-images/scraping2.png", 
-            "../assets/images/project-images/scraping3.png"
+            "./assets/images/project-images/scraping1.png", 
+            "./assets/images/project-images/scraping2.png", 
+            "./assets/images/project-images/scraping3.png"
         ],
         githubLink: "https://github.com/ReyRiz/data-mining-project"
     },
@@ -237,7 +250,7 @@ const projectsData = [
         category: "mobile",
         tags: ["Java", "Android", "Firebase Auth", "Firestore", "Material Design"],
         description: "Aplikasi Android untuk membantu pengguna mengelola mood dan kesehatan mental melalui tracking mood harian dan mini games interaktif.",
-        thumbnail: "../assets/images/moodmate1.jpg",
+        thumbnail: "./assets/images/moodmate1.jpg",
         longDescription: `
             <p>MoodMate adalah aplikasi Android yang dirancang untuk membantu pengguna dalam mengelola kesehatan mental dan mood harian mereka. Aplikasi ini menyediakan platform yang user-friendly untuk tracking mood, refleksi diri, dan aktivitas yang dapat meningkatkan mood positif.</p>
             
@@ -266,13 +279,48 @@ const projectsData = [
         `,
         challenges: "Tantangan utama dalam pengembangan MoodMate adalah merancang user experience yang intuitif untuk tracking mood sekaligus menjaga privasi pengguna. Saya mengatasi ini dengan implementasi Firebase Authentication untuk keamanan dan desain interface yang simpel namun informatif. Tantangan teknis lainnya adalah optimasi performa aplikasi agar tetap responsif saat menampilkan grafik dan statistik dari data historical yang besar.",
         images: [
-            "../assets/images/project-images/moodmate1.jpg", 
-            "../assets/images/project-images/moodmate2.jpg", 
-            "../assets/images/project-images/moodmate3.jpg"
+            "./assets/images/project-images/moodmate1.jpg", 
+            "./assets/images/project-images/moodmate2.jpg", 
+            "./assets/images/project-images/moodmate3.jpg"
         ],
         githubLink: "https://github.com/khalikaa/MoodMate-Android"
     }
 ];
 
+// Function to update all image paths based on current location
+function updateProjectImagePaths() {
+    const currentPath = window.location.pathname;
+    const isInSubfolder = currentPath.includes('/projects/');
+    
+    projectsData.forEach(project => {
+        // Update thumbnail path
+        if (project.thumbnail) {
+            if (isInSubfolder) {
+                // In subfolder, use ../ path
+                project.thumbnail = project.thumbnail.replace('./assets/', '../assets/');
+            } else {
+                // In root, use ./ path
+                project.thumbnail = project.thumbnail.replace('../assets/', './assets/');
+            }
+        }
+        
+        // Update images array paths
+        if (project.images) {
+            project.images = project.images.map(imagePath => {
+                if (isInSubfolder) {
+                    // In subfolder, use ../ path
+                    return imagePath.replace('./assets/', '../assets/');
+                } else {
+                    // In root, use ./ path
+                    return imagePath.replace('../assets/', './assets/');
+                }
+            });
+        }
+    });
+}
+
+// Update paths immediately when script loads
+updateProjectImagePaths();
+
 // Get all unique categories for filtering
-const categories = [...new Set(projects.map(project => project.category))];
+const categories = [...new Set(projectsData.map(project => project.category))];

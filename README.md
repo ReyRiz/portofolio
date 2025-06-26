@@ -1,31 +1,26 @@
-# ReyRiz Portfolio
+# Portfolio Website - Fariz Idham R.
 
-A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
+Portfolio website yang menampilkan proyek-proyek akademik dan profesional saya dalam bidang Sistem Informasi.
 
-## Features
+## Fitur
 
-- Clean, modern design with responsive layout
-- Project showcase with filtering and search
-- Interactive timeline for professional journey
-- Skills presentation with categorization
-- Smooth animations and transitions
-- Mobile-friendly navigation
-- Cross-browser compatibility
+- **Responsive Design**: Tampilan yang optimal di semua perangkat
+- **Dynamic Content**: Proyek dimuat secara dinamis dari JavaScript
+- **Project Filtering**: Filter proyek berdasarkan kategori
+- **Modern UI**: Desain yang bersih dan modern
 
-## Pages
+## Teknologi
 
-1. **Home Page**: Introduction and featured projects
-2. **Projects Page**: Full project gallery with filtering and search
-3. **Project Detail Page**: In-depth project information
-4. **About Page**: Personal information, skills, and professional journey
+- HTML5, CSS3, JavaScript (Vanilla)
+- Responsive Web Design
+- GitHub Pages hosting
 
-## Technologies Used
+## Halaman
 
-- HTML5
-- CSS3 (Custom properties, Flexbox, Grid)
-- JavaScript (ES6+)
-- FontAwesome icons
-- Google Fonts
+1. **Home Page**: Pengenalan dan featured projects
+2. **Projects Page**: Galeri proyek lengkap dengan filtering
+3. **Project Detail Page**: Informasi detail proyek
+4. **About Page**: Informasi personal, keahlian, dan perjalanan profesional
 
 ## Structure
 

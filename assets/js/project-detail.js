@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Update image paths first
+    if (typeof updateProjectImagePaths === 'function') {
+        updateProjectImagePaths();
+    }
+    
     // Get project ID from URL parameter
     const urlParams = new URLSearchParams(window.location.search);
     const projectId = parseInt(urlParams.get('id'));
