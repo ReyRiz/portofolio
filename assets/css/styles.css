@@ -171,6 +171,7 @@ p {
     margin-bottom: 20px;
     font-size: 1.1rem;
     line-height: 1.8;
+    text-align: center;
 }
 
 #home {
@@ -1362,20 +1363,6 @@ footer {
     color: var(--light);
 }
 
-.project-meta {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    color: var(--gray-400);
-    font-size: 0.95rem;
-}
-
-.project-meta span {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
 .project-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1458,23 +1445,6 @@ footer {
     margin-top: 0;
 }
 
-.technologies-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.technologies-list span {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: white;
-    padding: 8px 16px;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
 .project-sidebar {
     padding-left: 40px;
     border-left: 1px solid rgba(255,255,255,0.05);
@@ -1500,7 +1470,7 @@ footer {
     gap: 15px;
 }
 
-.github-link, .live-link {
+.github-link {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1509,19 +1479,11 @@ footer {
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s;
-}
-
-.github-link {
     background: #24292e;
     color: white;
 }
 
-.live-link {
-    background: var(--accent);
-    color: white;
-}
-
-.github-link:hover, .live-link:hover {
+.github-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
@@ -1788,11 +1750,6 @@ footer {
     
     .project-header {
         padding: 30px 20px;
-    }
-    
-    .project-meta {
-        flex-direction: column;
-        gap: 10px;
     }
     
     .project-content {

@@ -17,10 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="project-header">
                 <div class="project-category-badge">${project.category}</div>
                 <h1>${project.title}</h1>
-                <div class="project-meta">
-                    <span><i class="far fa-calendar-alt"></i> ${project.date}</span>
-                    <span><i class="fas fa-book"></i> ${project.course}</span>
-                </div>
             </div>
             
             <div class="project-gallery">
@@ -38,11 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         ${project.longDescription}
                     </div>
                     
-                    <h2>Technologies Used</h2>
-                    <div class="technologies-list">
-                        ${project.technologies.map(tech => `<span>${tech}</span>`).join('')}
-                    </div>
-                    
                     <h2>Challenges & Solutions</h2>
                     <p>${project.challenges}</p>
                 </div>
@@ -54,11 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             <a href="${project.githubLink}" target="_blank" class="github-link">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
-                            ${project.liveLink ? `
-                                <a href="${project.liveLink}" target="_blank" class="live-link">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
-                            ` : ''}
                         </div>
                     </div>
                     

@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Fariz Idham R.</title>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Proyek | Fariz Idham R.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="projects-page">
     <nav class="main-nav">
         <div class="container">
             <div class="logo">
-                <a href="index.html">ReyRiz Portfolio</a>
+                <a href="index.html">Portfolio</a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="projects.html" class="active">Proyek</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
             </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -26,150 +27,28 @@
     
     <div class="page-header">
         <div class="container">
-            <h1>My Projects</h1>
-            <p>A collection of my academic and personal projects</p>
+            <h1>Proyek Saya</h1>
+            <p>Koleksi proyek akademik dan personal saya</p>
         </div>
     </div>
     
     <div class="container">
         <div class="projects-search-box">
-            <input type="text" id="project-search" placeholder="Search projects by name, technology, or category...">
+            <input type="text" id="project-search" placeholder="Cari proyek berdasarkan nama, teknologi, atau kategori...">
             <button id="search-btn"><i class="fas fa-search"></i></button>
         </div>
         
         <div class="projects-categories">
-            <button class="category-btn active" data-category="all">All Projects</button>
+            <button class="category-btn active" data-category="all">Semua Proyek</button>
             <button class="category-btn" data-category="datamining">Data Mining</button>
-            <button class="category-btn" data-category="webdev">Web Development</button>
-            <button class="category-btn" data-category="mobiledev">Mobile Development</button>
-            <button class="category-btn" data-category="ai">Artificial Intelligence</button>
-            <button class="category-btn" data-category="database">Database Systems</button>
+            <button class="category-btn" data-category="webdev">Pengembangan Web</button>
+            <button class="category-btn" data-category="mobiledev">Pengembangan Mobile</button>
+            <button class="category-btn" data-category="ai">Kecerdasan Buatan</button>
+            <button class="category-btn" data-category="database">Sistem Database</button>
         </div>
         
         <div class="projects-grid" id="projects-container">
-            <!-- Data Mining Projects -->
-            <div class="project-item" data-category="datamining" data-tags="python, machine learning, pandas, sentiment analysis">
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project1.jpg');"></div>
-                    <div class="project-category">Data Mining</div>
-                    <div class="project-info">
-                        <h3>Sentiment Analysis Tool</h3>
-                        <p>A machine learning project that analyzes customer reviews and classifies sentiment.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Machine Learning</span>
-                            <span>NLP</span>
-                        </div>
-                        <a href="projects/project-detail.html?id=1" class="project-link">View Details</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-item" data-category="datamining" data-tags="python, clustering, data visualization, k-means">
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project4.jpg');"></div>
-                    <div class="project-category">Data Mining</div>
-                    <div class="project-info">
-                        <h3>Customer Segmentation</h3>
-                        <p>Using clustering algorithms to segment customers based on purchasing behavior.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>K-means</span>
-                            <span>Pandas</span>
-                        </div>
-                        <a href="projects/project-detail.html?id=4" class="project-link">View Details</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Web Development Projects -->
-            <div class="project-item" data-category="webdev" data-tags="javascript, react, node.js, e-commerce">
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project2.jpg');"></div>
-                    <div class="project-category">Web Development</div>
-                    <div class="project-info">
-                        <h3>E-commerce Platform</h3>
-                        <p>A fully functional online store with user authentication and payment processing.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <a href="projects/project-detail.html?id=2" class="project-link">View Details</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-item" data-category="webdev" data-tags="php, laravel, mysql, cms">
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project5.jpg');"></div>
-                    <div class="project-category">Web Development</div>
-                    <div class="project-info">
-                        <h3>Content Management System</h3>
-                        <p>A custom CMS built with Laravel for managing digital content.</p>
-                        <div class="project-tags">
-                            <span>PHP</span>
-                            <span>Laravel</span>
-                            <span>MySQL</span>
-                        </div>
-                        <a href="projects/project-detail.html?id=5" class="project-link">View Details</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Mobile Development Projects -->
-            <div class="project-item" data-category="mobiledev" data-tags="react native, firebase, fitness, mobile app">
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project3.jpg');"></div>
-                    <div class="project-category">Mobile Development</div>
-                    <div class="project-info">
-                        <h3>Fitness Tracking App</h3>
-                        <p>A mobile application for tracking workouts and nutritional information.</p>
-                        <div class="project-tags">
-                            <span>React Native</span>
-                            <span>Firebase</span>
-                            <span>Redux</span>
-                        </div>
-                        <a href="projects/project-detail.html?id=3" class="project-link">View Details</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- AI Projects -->
-            <div class="project-item" data-category="ai" data-tags="python, tensorflow, deep learning, computer vision">
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project6.jpg');"></div>
-                    <div class="project-category">Artificial Intelligence</div>
-                    <div class="project-info">
-                        <h3>Image Recognition System</h3>
-                        <p>A deep learning model that recognizes and classifies objects in images.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>Computer Vision</span>
-                        </div>
-                        <a href="projects/project-detail.html?id=6" class="project-link">View Details</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Database Systems Projects -->
-            <div class="project-item" data-category="database" data-tags="sql, database design, optimization, mysql">
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project7.jpg');"></div>
-                    <div class="project-category">Database Systems</div>
-                    <div class="project-info">
-                        <h3>Hospital Management System</h3>
-                        <p>A database design and implementation for managing hospital operations.</p>
-                        <div class="project-tags">
-                            <span>SQL</span>
-                            <span>MySQL</span>
-                            <span>Database Design</span>
-                        </div>
-                        <a href="projects/project-detail.html?id=7" class="project-link">View Details</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Project items will be loaded dynamically from project-data.js -->
         </div>
     </div>
     
@@ -177,22 +56,22 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>YourPortfolio</h3>
-                    <p>Showcasing my journey in Computer Science</p>
+                    <h3>ReyRiz Portfolio</h3>
+                    <p>Menampilkan perjalanan saya di bidang Sistem Informasi</p>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4>Tautan Cepat</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="projects.html">Proyek</a></li>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="index.html#contact">Kontak</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-social">
-                    <h4>Connect With Me</h4>
+                    <h4>Terhubung Dengan Saya</h4>
                     <div class="social-icons">
                         <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
@@ -203,7 +82,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Your Name. All rights reserved.</p>
+                <p>&copy; 2025 Fariz Idham R. Hak cipta dilindungi.</p>
             </div>
         </div>
     </footer>

@@ -2,70 +2,277 @@
 const projectsData = [
     {
         id: 1,
-        title: "Sentiment Analysis Tool",
-        category: "Data Mining",
-        tags: ["Python", "Machine Learning", "NLP"],
-        description: "A machine learning project that analyzes customer reviews and classifies sentiment with high accuracy.",
+        title: "EnergyPulse - Sistem Prediksi Konsumsi Listrik",
+        category: "datamining",
+        tags: ["Python", "Time Series", "Prediksi"],
+        description: "Sistem analitik prediktif canggih untuk meramalkan konsumsi listrik menggunakan model AI/ML hybrid.",
+        thumbnail: "../assets/images/electricity1.jpg",
         longDescription: `
-            <p>This sentiment analysis tool was developed as part of my Data Mining course. It uses natural language processing techniques to analyze customer reviews and classify them as positive, negative, or neutral.</p>
+            <p>EnergyPulse adalah sistem peramalan canggih yang dikembangkan sebagai bagian dari mata kuliah Data Mining. Sistem ini menggunakan kombinasi metode statistik tradisional dan teknik deep learning untuk memprediksi konsumsi listrik dengan akurasi tinggi, membantu perusahaan utilitas mengoptimalkan alokasi sumber daya dan mengurangi pemborosan.</p>
             
-            <p>The project involved several key steps:</p>
+            <p>Proyek ini melibatkan beberapa tahapan utama:</p>
             <ul>
-                <li>Data collection from multiple e-commerce websites</li>
-                <li>Text preprocessing including tokenization, stop word removal, and lemmatization</li>
-                <li>Feature extraction using TF-IDF</li>
-                <li>Model training using various algorithms (Naive Bayes, SVM, and LSTM)</li>
-                <li>Model evaluation and hyperparameter tuning</li>
-                <li>Deployment as a web service</li>
+                <li>Pengumpulan data</li>
+                <li>Preprocessing time series lanjutan termasuk deteksi outlier dan imputasi</li>
+                <li>Feature engineering dengan memasukkan fitur temporal, variabel lag, dan regresor eksternal</li>
+                <li>Implementasi pendekatan peramalan hybrid yang menggabungkan SARIMA, ARIMA, dan LSTM neural networks</li>
+                <li>Dashboard visualisasi interaktif untuk interpretasi hasil</li>
             </ul>
             
-            <p>The final model achieved an accuracy of 89% on the test dataset, which is significantly better than the baseline models. The tool is now being used by a local business to monitor customer feedback.</p>
         `,
-        technologies: ["Python", "Scikit-learn", "NLTK", "Pandas", "Flask", "Docker"],
-        challenges: "One of the main challenges was handling the imbalanced dataset, where positive reviews significantly outnumbered negative ones. I addressed this using SMOTE for oversampling and also applied ensemble methods to improve performance.",
+        challenges: "Tantangan terbesar adalah mengembangkan model yang dapat beradaptasi dengan pola musiman reguler dan kejadian tidak beraturan seperti hari libur, cuaca ekstrem, dan pergeseran ekonomi. Saya mengatasi ini dengan menciptakan arsitektur ensemble kustom yang menggabungkan kekuatan model statistik (untuk pola reguler) dengan deep learning (untuk hubungan kompleks), menggunakan meta-learner untuk secara cerdas memberikan bobot prediksi berdasarkan faktor kontekstual.",
         images: [
-            "../assets/images/project1-1.jpg", 
-            "../assets/images/project1-2.jpg", 
-            "../assets/images/project1-3.jpg"
+            "../assets/images/project-images/electricity1.jpg", 
+            "../assets/images/project-images/electricity2.jpg", 
+            "../assets/images/project-images/electricity3.jpg"
         ],
-        githubLink: "https://github.com/yourusername/sentiment-analysis",
-        liveLink: "https://sentiment-demo.yourdomain.com",
-        date: "October 2024",
-        course: "Data Mining (CSE4587)"
+        githubLink: "https://github.com/ReyRiz/forecasting-electricity-consumption"
     },
     {
         id: 2,
-        title: "E-commerce Platform",
-        category: "Web Development",
-        tags: ["React", "Node.js", "MongoDB"],
-        description: "A fully functional online store with user authentication and payment processing capabilities.",
+        title: "TokoLingu - Platform E-commerce Pembelajaran Bahasa",
+        category: "webdev",
+        tags: ["PHP", "Laravel", "Blade", "JavaScript", "E-commerce"],
+        description: "Solusi e-commerce komprehensif untuk materi dan sumber daya pembelajaran bahasa.",
+        thumbnail: "../assets/images/project2.jpg",
         longDescription: `
-            <p>This e-commerce platform was developed as my final project for the Web Development course. It's a complete online shopping solution with user authentication, product catalog, shopping cart, and payment processing.</p>
+            <p>TokoLingu adalah platform e-commerce lengkap yang mengkhususkan diri pada sumber daya pembelajaran bahasa. Platform ini dikembangkan sebagai proyek capstone untuk mata kuliah Pengembangan Web, dengan fokus pada penciptaan pengalaman berbelanja yang mulus untuk para pembelajar bahasa.</p>
             
-            <p>Key features of the platform include:</p>
+            <p>Fitur utama platform meliputi:</p>
             <ul>
-                <li>User registration and authentication with JWT</li>
-                <li>Product catalog with categories and search functionality</li>
-                <li>Shopping cart and wishlist</li>
-                <li>Secure checkout process with Stripe integration</li>
-                <li>Order history and tracking</li>
-                <li>Admin dashboard for product and order management</li>
-                <li>Responsive design for mobile and desktop</li>
+                <li>Registrasi dan autentikasi pengguna dengan kontrol akses multi-level</li>
+                <li>Katalog produk ekstensif yang diorganisir berdasarkan bahasa dan jenis sumber daya</li>
+                <li>Pencarian lanjutan dengan filter berdasarkan bahasa, level, format, dan harga</li>
+                <li>Fungsi keranjang belanja dan wishlist</li>
+                <li>Proses checkout aman dengan berbagai opsi pembayaran</li>
+                <li>Sistem manajemen dan pelacakan pesanan</li>
+                <li>Dashboard penjual untuk vendor mendaftarkan dan mengelola produk mereka</li>
+                <li>Panel admin untuk manajemen situs dan analitik</li>
+                <li>Desain responsif yang dioptimalkan untuk semua perangkat</li>
             </ul>
             
-            <p>The project follows a microservices architecture, with separate services for authentication, product management, cart management, and order processing.</p>
+            <p>Proyek ini mengimplementasikan arsitektur MVC Laravel dengan templating Blade untuk tampilan dinamis, JavaScript kustom untuk elemen UI interaktif, dan MySQL untuk penyimpanan database. Platform mengikuti praktik terbaik untuk keamanan termasuk perlindungan CSRF, validasi, dan autentikasi aman.</p>
         `,
-        technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "JWT", "Stripe API", "Docker", "AWS"],
-        challenges: "The most challenging aspect was implementing the real-time inventory management system that had to handle concurrent transactions without conflicts. I solved this by implementing optimistic concurrency control in MongoDB.",
+        challenges: "Tantangan signifikan adalah mengimplementasikan sistem rekomendasi yang menyarankan sumber daya pembelajaran bahasa yang relevan berdasarkan perilaku dan preferensi pengguna. Saya memecahkan ini dengan membuat algoritma collaborative filtering yang menganalisis riwayat pembelian dan pola browsing untuk menghasilkan rekomendasi yang dipersonalisasi, semuanya terintegrasi dalam ekosistem Laravel.",
         images: [
-            "../assets/images/project2-1.jpg", 
-            "../assets/images/project2-2.jpg", 
-            "../assets/images/project2-3.jpg"
+            "../assets/images/project-images/project2-1.jpg", 
+            "../assets/images/project-images/project2-2.jpg", 
+            "../assets/images/project-images/project2-3.jpg"
         ],
-        githubLink: "https://github.com/yourusername/ecommerce-platform",
-        liveLink: "https://shop-demo.yourdomain.com",
-        date: "December 2024",
-        course: "Web Development (CSE3456)"
+        githubLink: "https://github.com/ReyRiz/tokolingu-ecommerce-project"
     },
-    // Add more projects here
+    {
+        id: 3,
+        title: "WhatsApp Clone - Aplikasi Pesan Android",
+        category: "mobiledev",
+        tags: ["Java", "Android", "Firebase", "Real-time Messaging"],
+        description: "Aplikasi WhatsApp Clone fungsional yang dibangun dengan pengembangan Android native dengan fitur pesan real-time dan berbagi media.",
+        thumbnail: "../assets/images/whatsapp1.jpg",
+        longDescription: `
+            <p>WhatsApp Clone ini adalah aplikasi pesan mobile berfitur lengkap yang dikembangkan sebagai proyek akhir untuk mata kuliah Pengembangan Aplikasi Mobile. Aplikasi ini mereplikasi fungsionalitas inti WhatsApp sambil mengimplementasikan praktik pengembangan Android modern.</p>
+            
+            <p>Aplikasi ini mencakup fitur-fitur berikut:</p>
+            <ul>
+                <li>Registrasi dan autentikasi pengguna menggunakan verifikasi nomor telepon</li>
+                <li>Pesan real-time satu-satu dengan tanda terima baca dan indikator sedang mengetik</li>
+                <li>Fungsi chat grup dengan kontrol admin</li>
+                <li>Kemampuan berbagi media (gambar, video, dokumen)</li>
+                <li>Panggilan suara dan video (simulasi)</li>
+                <li>Notifikasi push untuk pesan baru</li>
+                <li>Sinkronisasi kontak</li>
+                <li>Enkripsi pesan (simulasi enkripsi end-to-end)</li>
+                <li>Update status dengan kontrol privasi</li>
+            </ul>
+            
+            <p>Aplikasi ini dibangun menggunakan pengembangan Android native dengan Java, mengikuti panduan Material Design dan mengimplementasikan Firebase Realtime Database untuk sinkronisasi pesan. Proyek ini menekankan prinsip arsitektur bersih dengan fokus pada performa dan efisiensi baterai.</p>
+        `,
+        challenges: "Tantangan paling signifikan adalah mengimplementasikan sistem pesan real-time yang efisien yang dapat menangani pengiriman pesan, tanda terima baca, dan kemampuan offline. Saya memecahkan ini dengan membuat sistem antrian pesan yang robust menggunakan Firebase Realtime Database dengan manajemen listener yang hati-hati dan strategi caching lokal untuk memastikan pesan disinkronkan dengan benar bahkan ketika konektivitas jaringan terputus-putus.",
+        images: [
+            "../assets/images/project-images/whatsapp1.jpg", 
+            "../assets/images/project-images/whatsapp2.jpg", 
+            "../assets/images/project-images/whatsapp3.jpg"
+        ],
+        githubLink: "https://github.com/ReyRiz/tugas-final-mobile"
+    },
+    {
+        id: 5,
+        title: "ShopEase - Proyek E-commerce Modern",
+        category: "webdev",
+        tags: ["React", "Node.js", "MongoDB", "E-commerce"],
+        description: "Platform e-commerce modern dengan teknologi MERN stack yang menawarkan pengalaman pengguna yang mulus dan desain responsif.",
+        thumbnail: "../assets/images/shopease1.png",
+        longDescription: `
+            <p>ShopEase adalah platform e-commerce modern yang dibangun dengan MERN stack (MongoDB, Express, React, Node.js) yang berfokus pada penciptaan pengalaman berbelanja tanpa hambatan. Proyek ini dikembangkan sebagai bagian dari mata kuliah Pengembangan Web Lanjutan, dengan penekanan pada framework JavaScript modern dan pengalaman pengguna.</p>
+            
+            <p>Fitur utama ShopEase meliputi:</p>
+            <ul>
+                <li>Arsitektur Single Page Application (SPA) untuk navigasi yang mulus</li>
+                <li>Sistem autentikasi dan otorisasi berbasis JWT</li>
+                <li>Update inventori real-time menggunakan WebSockets</li>
+                <li>Manajemen state client-side dengan Redux</li>
+                <li>Desain RESTful API dengan Express.js</li>
+                <li>UI responsif yang dibangun dengan komponen Material UI</li>
+                <li>Validasi form client-side dan penanganan error</li>
+                <li>Dashboard admin dengan analitik dan grafik</li>
+                <li>Pipeline CI/CD untuk testing dan deployment otomatis</li>
+            </ul>
+            
+            <p>Aplikasi ini dibangun menggunakan praktik JavaScript modern termasuk fitur ES6+, React Hooks untuk manajemen state, dan async/await untuk menangani operasi asinkron. Proyek ini mengimplementasikan praktik terbaik untuk keamanan dan optimasi performa.</p>
+        `,
+        challenges: "Tantangan signifikan adalah mengimplementasikan update inventori real-time untuk mencegah pengguna membeli barang yang sudah habis stok. Saya memecahkan ini dengan mengintegrasikan WebSockets melalui Socket.io untuk memberikan notifikasi instan tentang perubahan stok dan mengimplementasikan optimistic UI updates yang dikombinasikan dengan validasi server untuk menjaga integritas data.",
+        images: [
+            "../assets/images/project-images/shopease2.png", 
+            "../assets/images/project-images/shopease3.png", 
+            "../assets/images/project-images/shopease4.png"
+        ],
+        githubLink: "https://github.com/ReyRiz/shopease-project"
+    },
+    {
+        id: 6,
+        title: "AksiNyata - Platform Kampanye Sosial",
+        category: "webdev",
+        tags: ["React", "Vue", "REST API", "Flask", "Dampak Sosial"],
+        description: "Platform web modern untuk membuat, mengelola, dan mempromosikan kampanye sosial serta inisiatif komunitas.",
+        thumbnail: "../assets/images/project6.jpg",
+        longDescription: `
+            <p>AksiNyata adalah platform web komprehensif yang dirancang untuk memfasilitasi kampanye sosial dan inisiatif komunitas. Proyek yang sadar sosial ini menggabungkan teknologi web modern dengan antarmuka pengguna yang intuitif untuk memungkinkan manajemen kampanye yang efektif dan keterlibatan komunitas.</p>
+            
+            <p>Fitur utama platform meliputi:</p>
+            <ul>
+                <li>Wizard pembuatan kampanye interaktif dengan template yang dapat disesuaikan</li>
+                <li>Alat berbagi dan promosi multi-channel</li>
+                <li>Fungsi donasi dan penggalangan dana dengan pemrosesan pembayaran aman</li>
+                <li>Pelacakan progres kampanye dan visualisasi milestone</li>
+                <li>Sistem registrasi dan koordinasi relawan</li>
+                <li>Manajemen acara untuk kegiatan terkait kampanye</li>
+                <li>Dashboard metrik keterlibatan pengguna dan analitik</li>
+                <li>Forum diskusi komunitas dan sistem pesan</li>
+                <li>Integrasi media sosial dan penjadwalan konten</li>
+            </ul>
+            
+            <p>AksiNyata dibangun dengan tech stack modern yang menampilkan frontend React dengan komponen Vue untuk elemen interaktif tertentu, arsitektur RESTful API untuk fungsionalitas inti, dan backend Flask API untuk pemrosesan data dan logika bisnis. Desain responsif memastikan fungsionalitas yang mulus di semua jenis perangkat.</p>
+        `,
+        challenges: "Tantangan utama adalah menciptakan integrasi yang mulus antara frontend React dan backend Flask sambil mempertahankan performa optimal dan pengalaman pengguna. Saya memecahkan ini dengan mengimplementasikan layer API yang terstruktur dengan baik dengan strategi caching data yang efisien dan manajemen state yang dioptimalkan menggunakan Redux. Tantangan lain adalah mengembangkan sistem pembuatan kampanye yang fleksibel yang dapat mengakomodasi berbagai jenis kampanye sambil tetap intuitif - diatasi melalui arsitektur komponen modular dengan generasi form dinamis.",
+        images: [
+            "../assets/images/project-images/project6-1.jpg", 
+            "../assets/images/project-images/project6-2.jpg", 
+            "../assets/images/project-images/project6-3.jpg"
+        ],
+        githubLink: "https://github.com/ReyRiz/AksiNyata"
+    },
+    {
+        id: 4,
+        title: "RedRide - Sistem Manajemen Transportasi",
+        category: "webdev",
+        tags: ["PHP", "Laravel", "MySQL", "JavaScript", "Transportasi"],
+        description: "Sistem manajemen transportasi komprehensif untuk layanan ride-hailing dan pemesanan kendaraan.",
+        thumbnail: "../assets/images/redride1.png",
+        longDescription: `
+            <p>RedRide adalah sistem manajemen transportasi berfitur lengkap yang menyediakan solusi komprehensif untuk layanan ride-hailing dan pemesanan kendaraan. Proyek ini dikembangkan untuk mendemonstrasikan kemahiran dalam pengembangan web menggunakan framework PHP modern dan manajemen database.</p>
+            
+            <p>Sistem ini mencakup fitur-fitur inti berikut:</p>
+            <ul>
+                <li>Registrasi peminjam</li>
+                <li>Sistem pemesanan</li>
+                <li>Kalkulasi tarif dinamis berdasarkan jarak dan waktu</li>
+                <li>Verifikasi driver dan manajemen kendaraan</li>
+                <li>Pemrosesan pembayaran dan riwayat transaksi</li>
+                <li>Sistem rating dan review untuk jaminan kualitas</li>
+                <li>Dashboard admin untuk monitoring dan manajemen sistem</li>
+                <li>Riwayat perjalanan</li>
+            </ul>
+            
+            <p>RedRide mengimplementasikan arsitektur backend yang robust menggunakan pola MVC Laravel, dengan fokus pada skalabilitas dan keamanan. Sistem ini menampilkan update real-time, endpoint API yang aman, dan validasi data komprehensif untuk memastikan operasi yang andal.</p>
+        `,
+        challenges: "Tidak ada tantangan yang terlalu signifikan dalam proyek ini, namun saya memastikan bahwa sistem dapat menangani beban tinggi dengan mengimplementasikan caching untuk data yang sering diakses dan optimasi query database. Saya juga mengembangkan sistem pemesanan yang fleksibel yang dapat menangani berbagai jenis kendaraan dan tarif dinamis berdasarkan kondisi lalu lintas.",
+        images: [
+            "../assets/images/project-images/redride1.png", 
+            "../assets/images/project-images/redride2.png", 
+            "../assets/images/project-images/redride3.png"
+        ],
+        githubLink: "https://github.com/khalikaa/RedRide"
+    },
+    {
+        id: 7,
+        title: "Data Mining Project - Web Scraping",
+        category: "datamining",
+        tags: ["Python", "Web Scraping", "BeautifulSoup4", "Selenium"],
+        description: "Proyek kumpulan script Python untuk melakukan web scraping dari berbagai sumber data dengan fokus pada scrapethissite.com.",
+        thumbnail: "../assets/images/scraping1.png",
+        longDescription: `
+            <p>Repository ini dikembangkan sebagai bagian dari mata kuliah Data Mining Semester 3. Proyek ini bertujuan untuk mempelajari dan menerapkan teknik-teknik web scraping untuk mengumpulkan data dari berbagai sumber web, kemudian menganalisis data tersebut menggunakan teknik data mining.</p>
+            
+            <p>Website Target: Scrapethissite.com adalah website yang dirancang khusus untuk pembelajaran web scraping. Website ini menyediakan berbagai tantangan scraping dengan tingkat kesulitan yang berbeda-beda, mulai dari scraping sederhana hingga yang memerlukan penanganan JavaScript dan AJAX.</p>
+            
+            <p>Jenis Data yang Di-scrape:</p>
+            <ul>
+                <li>Countries Data - Data negara-negara dengan informasi populasi, luas area, dan ibukota</li>
+                <li>Hockey Teams - Data tim hockey dengan statistik menang, kalah, dan seri</li>
+                <li>AJAX/JavaScript Content - Data yang dimuat secara dinamis menggunakan JavaScript</li>
+                <li>Film Data - Data film dengan informasi tahun rilis, rating, dan detail lainnya</li>
+            </ul>
+            
+            <p>Tools dan Library yang Digunakan:</p>
+            <ul>
+                <li>requests - Untuk HTTP requests sederhana</li>
+                <li>BeautifulSoup4 - Untuk parsing HTML</li>
+                <li>Selenium - Untuk scraping konten JavaScript/AJAX</li>
+                <li>pandas - Untuk manipulasi dan analisis data</li>
+                <li>csv - Untuk handling file CSV</li>
+            </ul>
+            
+            <p>Proyek ini menghasilkan berbagai file CSV berisi data yang telah di-scrape, serta script analisis untuk memproses data tersebut. Struktur proyek terorganisir dengan baik, memisahkan script scraping, data hasil, analisis, dan output ke dalam folder-folder yang berbeda.</p>
+        `,
+        challenges: "Tantangan utama dalam proyek ini adalah menangani berbagai jenis konten web, mulai dari HTML statis hingga konten dinamis yang dimuat dengan JavaScript. Saya mengatasi ini dengan menggunakan kombinasi BeautifulSoup4 untuk scraping HTML sederhana dan Selenium untuk menangani konten AJAX/JavaScript. Tantangan lainnya adalah memastikan data yang di-scrape akurat dan terstruktur dengan baik untuk analisis lebih lanjut.",
+        images: [
+            "../assets/images/project-images/scraping1.png", 
+            "../assets/images/project-images/scraping2.png", 
+            "../assets/images/project-images/scraping3.png"
+        ],
+        githubLink: "https://github.com/ReyRiz/data-mining-project"
+    },
+    {
+        id: 8,
+        title: "MoodMate - Aplikasi Manajemen Mood",
+        category: "mobile",
+        tags: ["Java", "Android", "Firebase Auth", "Firestore", "Material Design"],
+        description: "Aplikasi Android untuk membantu pengguna mengelola mood dan kesehatan mental melalui tracking mood harian dan mini games interaktif.",
+        thumbnail: "../assets/images/moodmate1.jpg",
+        longDescription: `
+            <p>MoodMate adalah aplikasi Android yang dirancang untuk membantu pengguna dalam mengelola kesehatan mental dan mood harian mereka. Aplikasi ini menyediakan platform yang user-friendly untuk tracking mood, refleksi diri, dan aktivitas yang dapat meningkatkan mood positif.</p>
+            
+            <p>Fitur Utama:</p>
+            <ul>
+                <li><strong>Mood Tracking</strong> - Catat mood harian dengan berbagai opsi emoji dan level intensitas</li>
+                <li><strong>Journal Pribadi</strong> - Tulis refleksi dan catatan personal untuk setiap hari</li>
+                <li><strong>Mini Games</strong> - Koleksi permainan sederhana untuk relaksasi dan mood booster</li>
+                <li><strong>Statistik Mood</strong> - Analisis pola mood dalam bentuk grafik dan insight mingguan/bulanan</li>
+                <li><strong>Reminder Notifications</strong> - Pengingat untuk melakukan check-in mood harian</li>
+                <li><strong>Tema Kustomisasi</strong> - Pilihan tema warna yang dapat disesuaikan dengan preferensi pengguna</li>
+            </ul>
+            
+            <p>Teknologi yang Digunakan:</p>
+            <ul>
+                <li><strong>Java</strong> - Bahasa pemrograman utama untuk development Android</li>
+                <li><strong>Android SDK</strong> - Framework pengembangan aplikasi Android native</li>
+                <li><strong>Firebase Authentication</strong> - Sistem login dan registrasi pengguna yang aman</li>
+                <li><strong>Cloud Firestore</strong> - Database NoSQL untuk menyimpan data mood dan journal pengguna</li>
+                <li><strong>Material Design</strong> - Desain UI/UX yang mengikuti guidelines Google Material Design</li>
+                <li><strong>MPAndroidChart</strong> - Library untuk menampilkan grafik statistik mood</li>
+                <li><strong>Glide</strong> - Library untuk manajemen dan loading gambar</li>
+            </ul>
+            
+            <p>MoodMate dikembangkan dengan fokus pada kemudahan penggunaan dan privasi pengguna. Semua data personal disimpan secara aman di cloud dengan enkripsi end-to-end, dan pengguna memiliki kontrol penuh terhadap data mereka.</p>
+        `,
+        challenges: "Tantangan utama dalam pengembangan MoodMate adalah merancang user experience yang intuitif untuk tracking mood sekaligus menjaga privasi pengguna. Saya mengatasi ini dengan implementasi Firebase Authentication untuk keamanan dan desain interface yang simpel namun informatif. Tantangan teknis lainnya adalah optimasi performa aplikasi agar tetap responsif saat menampilkan grafik dan statistik dari data historical yang besar.",
+        images: [
+            "../assets/images/project-images/moodmate1.jpg", 
+            "../assets/images/project-images/moodmate2.jpg", 
+            "../assets/images/project-images/moodmate3.jpg"
+        ],
+        githubLink: "https://github.com/khalikaa/MoodMate-Android"
+    }
 ];
+
+// Get all unique categories for filtering
+const categories = [...new Set(projects.map(project => project.category))];

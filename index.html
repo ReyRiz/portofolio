@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Fariz Idham R.</title>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfolio | Fariz Idham R.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="home-page">
     <header class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight-text">Fariz Idham R.</span></h1>
-            <p class="tagline">Student & Developer</p>
+            <h1>Halo, Saya <span class="highlight-text">Fariz Idham R.</span></h1>
+            <p class="tagline">Mahasiswa & Developer</p>
             <div class="hero-buttons">
-                <a href="#about" class="btn primary-btn">About Me</a>
-                <a href="projects.html" class="btn secondary-btn">View Projects</a>
+                <a href="#about" class="btn primary-btn">Tentang Saya</a>
+                <a href="projects.html" class="btn secondary-btn">Lihat Proyek</a>
             </div>
             <div class="scroll-down">
-                <span>Scroll Down</span>
+                <span>Gulir ke Bawah</span>
                 <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </header>    <nav class="main-nav">
         <div class="container">
             <div class="logo">
-                <a href="index.html">ReyRiz Portfolio</a>
+                <a href="index.html">Portfolio</a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="projects.html">Proyek</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
             </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -41,62 +42,36 @@
     <div class="container">
         <section id="about" class="home-section">
             <div class="section-header">
-                <h2>About Me</h2>
+                <h2>Tentang Saya</h2>
                 <div class="section-line"></div>
             </div>
-            <div class="about-content">                <div class="about-image">
-                    <img src="assets/images/profile.jpg" alt="Your Name">
-                </div>                <div class="about-text">
-                    <h3>Student & Developer</h3>
-                    <p>Welcome to my portfolio! I'm a passionate student pursuing a degree in Computer Science with a focus on web development and data mining. I love building things that live on the internet and solving complex problems through code.</p>
-                    <p>Currently, I'm focused on expanding my knowledge in various fields of computer science while working on interesting projects that challenge my abilities.</p>
-                    <a href="about.html" class="btn outline-btn">Learn More</a>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/profile.jpg" alt="Fariz Idham R.">
+                </div>
+                <div class="about-text">
+                    <h3>Mahasiswa & Developer</h3>
+                    <p>Selamat datang di portfolio saya! Saya seorang mahasiswa yang passionate menempuh pendidikan di bidang Sistem Informasi dengan fokus pada pengembangan web dan data mining. Saya senang membangun hal-hal yang hidup di internet dan memecahkan masalah kompleks melalui kode.</p>
+                    <p>Saat ini, saya fokus memperluas pengetahuan di berbagai bidang ilmu komputer sambil mengerjakan proyek-proyek menarik yang menantang kemampuan saya.</p>
+                    <a href="about.html" class="btn outline-btn">Pelajari Lebih Lanjut</a>
                 </div>
             </div>
         </section>
         
         <section id="featured-projects" class="home-section">
             <div class="section-header">
-                <h2>Featured Projects</h2>
+                <h2>Proyek Unggulan</h2>
                 <div class="section-line"></div>
             </div>
-            <p class="section-intro">Here are some of my recent works across different courses. Each project represents my learning journey and problem-solving approach.</p>
+            <p class="section-intro">Berikut adalah beberapa karya terbaru saya di berbagai mata kuliah. Setiap proyek mewakili perjalanan belajar dan pendekatan pemecahan masalah saya.</p>
             
-            <div class="project-list featured">
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project1.jpg');"></div>
-                    <div class="project-category">Data Mining</div>
-                    <div class="project-info">
-                        <h3>Sentiment Analysis Tool</h3>
-                        <p>A machine learning project that analyzes customer reviews and classifies sentiment.</p>
-                        <a href="projects/project-detail.html?id=1" class="btn small-btn">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project2.jpg');"></div>
-                    <div class="project-category">Web Development</div>
-                    <div class="project-info">
-                        <h3>E-commerce Platform</h3>
-                        <p>A fully functional online store with user authentication and payment processing.</p>
-                        <a href="projects/project-detail.html?id=2" class="btn small-btn">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('images/project3.jpg');"></div>
-                    <div class="project-category">Mobile Development</div>
-                    <div class="project-info">
-                        <h3>Fitness Tracking App</h3>
-                        <p>A mobile application for tracking workouts and nutritional information.</p>
-                        <a href="projects/project-detail.html?id=3" class="btn small-btn">View Details</a>
-                    </div>
-                </div>
+            <div class="project-list featured" id="featured-projects-container">
+                <!-- Featured projects akan dimuat secara dinamis oleh JavaScript -->
             </div>
             
             <div class="view-all-container">
                 <a href="projects.html" class="view-all-button">
-                    <span>View All Projects</span>
+                    <span>Lihat Semua Proyek</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
@@ -104,7 +79,7 @@
         
         <section id="skills" class="home-section">
             <div class="section-header">
-                <h2>My Skills</h2>
+                <h2>Keahlian Saya</h2>
                 <div class="section-line"></div>
             </div>
             
@@ -121,7 +96,7 @@
                 </div>
                 
                 <div class="skills-category">
-                    <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                    <h3><i class="fas fa-laptop-code"></i> Pengembangan Web</h3>
                     <ul class="skills-list">
                         <li>HTML/CSS</li>
                         <li>React</li>
@@ -132,12 +107,12 @@
                 </div>
                 
                 <div class="skills-category">
-                    <h3><i class="fas fa-database"></i> Data Science</h3>
+                    <h3><i class="fas fa-database"></i> Ilmu Data</h3>
                     <ul class="skills-list">
                         <li>Data Mining</li>
                         <li>Machine Learning</li>
                         <li>SQL</li>
-                        <li>Data Visualization</li>
+                        <li>Visualisasi Data</li>
                         <li>Pandas</li>
                     </ul>
                 </div>
@@ -146,31 +121,31 @@
         
         <section id="contact" class="home-section">
             <div class="section-header">
-                <h2>Get In Touch</h2>
+                <h2>Mari Terhubung</h2>
                 <div class="section-line"></div>
             </div>
-            <p class="section-intro">Feel free to reach out if you'd like to collaborate on a project or just want to say hello!</p>
+            <p class="section-intro">Jangan ragu untuk menghubungi saya jika Anda ingin berkolaborasi dalam sebuah proyek atau hanya ingin menyapa!</p>
             
             <div class="contact-options">
                 <div class="contact-card">
                     <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
-                    <p>your.email@example.com</p>
-                    <a href="mailto:your.email@example.com" class="contact-link">Send Email</a>
+                    <p>farizidhamr@gmail.com</p>
+                    <a href="mailto:farizidhamr@gmail.com" class="contact-link">Kirim Email</a>
                 </div>
                 
                 <div class="contact-card">
                     <i class="fab fa-github"></i>
                     <h3>GitHub</h3>
-                    <p>github.com/yourusername</p>
-                    <a href="https://github.com/yourusername" target="_blank" class="contact-link">View Profile</a>
+                    <p>github.com/ReyRiz</p>
+                    <a href="https://github.com/ReyRiz" target="_blank" class="contact-link">Lihat Profil</a>
                 </div>
                 
                 <div class="contact-card">
                     <i class="fab fa-linkedin"></i>
                     <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/yourname</p>
-                    <a href="https://linkedin.com/in/yourname" target="_blank" class="contact-link">Connect</a>
+                    <p>linkedin.com/in/farizidham</p>
+                    <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="contact-link">Terhubung</a>
                 </div>
             </div>
         </section>
@@ -179,22 +154,22 @@
     <footer>
         <div class="container">
             <div class="footer-content">                <div class="footer-logo">
-                    <h3>ReyRiz Portfolio</h3>
-                    <p>Showcasing my journey in Computer Science</p>
+                    <h3>Portfolio</h3>
+                    <p>Menampilkan perjalanan saya di bidang Ilmu Komputer</p>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4>Tautan Cepat</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="projects.html">Proyek</a></li>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="#contact">Kontak</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-social">
-                    <h4>Connect With Me</h4>
+                    <h4>Terhubung Dengan Saya</h4>
                     <div class="social-icons">
                         <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
@@ -203,12 +178,13 @@
                     </div>
                 </div>
             </div>
-              <div class="footer-bottom">
-                <p>&copy; 2025 Fariz Idham R. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fariz Idham R. Hak cipta dilindungi.</p>
             </div>
         </div>
     </footer>
 
+    <script src="assets/js/project-data.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
