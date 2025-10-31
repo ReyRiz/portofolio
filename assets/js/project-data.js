@@ -14,6 +14,209 @@ function getAssetPath(relativePath) {
 
 const projectsData = [
     {
+        id: 9,
+        title: "Software Testing Strategies",
+        category: "stqa",
+        tags: ["Testing", "Quality Assurance", "Test Strategy"],
+        description: "Dokumen komprehensif tentang berbagai strategi pengujian perangkat lunak.",
+        thumbnail: "./assets/images/project-images/stqa1.jpg",
+        longDescription: `
+            <p>Proyek ini adalah dokumen komprehensif yang menjelaskan berbagai strategi pengujian perangkat lunak modern, termasuk:</p>
+            <ul>
+                <li>Unit Testing Strategy</li>
+                <li>Integration Testing Strategy</li>
+                <li>System Testing Strategy</li>
+                <li>Acceptance Testing Strategy</li>
+                <li>Performance Testing Strategy</li>
+                <li>Security Testing Strategy</li>
+            </ul>
+            <p>Dokumen ini mencakup best practices, tools, dan metodologi yang digunakan dalam setiap strategi pengujian.</p>
+        `,
+        challenges: "Mengorganisir dan menyajikan informasi kompleks tentang strategi pengujian dalam format yang mudah dipahami dan dapat diterapkan.",
+        downloadLink: "./assets/docs/software-testing-strategies.pdf",
+        images: [
+            "./assets/images/project-images/stqa1.jpg",
+            "./assets/images/project-images/stqa1.jpg",
+            "./assets/images/project-images/stqa1.jpg"
+        ]
+    },
+    {
+        id: 10,
+        title: "Introduksi ke UI/UX Testing",
+        category: "stqa",
+        tags: ["UI Testing", "UX Testing", "Usability"],
+        description: "Panduan lengkap tentang pengujian User Interface dan User Experience.",
+        thumbnail: "./assets/images/project-images/stqa2.png",
+        longDescription: `
+            <p>Dokumen ini memberikan pengantar komprehensif tentang pengujian UI/UX, meliputi:</p>
+            <ul>
+                <li>Prinsip Dasar UI/UX Testing</li>
+                <li>Metodologi Pengujian UI/UX</li>
+                <li>Tools untuk UI/UX Testing</li>
+                <li>Usability Testing</li>
+                <li>Best Practices dalam UI/UX Testing</li>
+            </ul>
+        `,
+        challenges: "Menyusun framework pengujian yang efektif untuk mengevaluasi aspek UI/UX secara menyeluruh.",
+        downloadLink: "./assets/docs/ui-ux-testing-intro.pdf",
+        images: [
+            "./assets/images/project-images/stqa2.png",
+            "./assets/images/project-images/stqa2.png",
+            "./assets/images/project-images/stqa2.png"
+        ]
+    },
+    {
+        id: 11,
+        title: "Test Plan",
+        category: "stqa",
+        tags: ["Test Planning", "Quality Assurance", "Documentation"],
+        description: "Template dan panduan lengkap untuk membuat Test Plan yang efektif.",
+        thumbnail: "./assets/images/project-images/stqa3.jpg",
+        longDescription: `
+            <p>Proyek ini menyediakan template dan panduan untuk membuat Test Plan yang komprehensif, mencakup:</p>
+            <ul>
+                <li>Struktur Test Plan</li>
+                <li>Test Objectives</li>
+                <li>Test Strategy</li>
+                <li>Test Environment</li>
+                <li>Test Schedule</li>
+                <li>Resource Requirements</li>
+            </ul>
+        `,
+        challenges: "Mengembangkan template yang fleksibel namun terstruktur untuk berbagai jenis proyek software.",
+        downloadLink: "./assets/docs/test-plan-template.pdf",
+        images: [
+            "./assets/images/project-images/stqa3.jpg",
+            "./assets/images/project-images/stqa3.jpg",
+            "./assets/images/project-images/stqa3.jpg"
+        ]
+    },
+    {
+        id: 12,
+        title: "Test Scenario, Case, dan Bug Reports",
+        category: "stqa",
+        tags: ["Test Cases", "Bug Reports", "QA Documentation"],
+        description: "Koleksi template dan contoh untuk Test Scenario, Test Case, dan Bug Report.",
+        thumbnail: "./assets/images/project-images/stqa4.jpg",
+        longDescription: `
+            <p>Dokumen ini berisi panduan lengkap tentang:</p>
+            <ul>
+                <li>Penulisan Test Scenario yang Efektif</li>
+                <li>Template Test Case</li>
+                <li>Format Bug Report</li>
+                <li>Best Practices dalam Dokumentasi Testing</li>
+                <li>Contoh-contoh Praktis</li>
+            </ul>
+        `,
+        challenges: "Menyusun format dokumentasi yang standar namun mudah dipahami untuk berbagai jenis pengujian.",
+        downloadLink: "./assets/docs/test-documentation-templates.pdf",
+        images: [
+            "./assets/images/project-images/stqa4.jpg",
+            "./assets/images/project-images/stqa4.jpg",
+            "./assets/images/project-images/stqa4.jpg"
+        ]
+    },
+    {
+        id: 13,
+        title: "Introduction to Unit Testing",
+        category: "stqa",
+        tags: ["Unit Testing", "JUnit", "Test Automation"],
+        description: "Pengenalan komprehensif tentang Unit Testing dengan fokus pada praktik terbaik dan implementasi.",
+        thumbnail: "./assets/images/project-images/stqa5.jpg",
+        longDescription: `
+            <p>Proyek ini mencakup materi lengkap tentang unit testing:</p>
+            <ul>
+                <li>Fundamental Unit Testing</li>
+                <li>Setup dan Konfigurasi JUnit</li>
+                <li>Writing Effective Unit Tests</li>
+                <li>Test Driven Development (TDD)</li>
+                <li>Code Coverage dan Quality Metrics</li>
+            </ul>
+        `,
+        challenges: "Mendemonstrasikan praktik unit testing yang efektif dengan contoh-contoh praktis.",
+        downloadLink: "./assets/docs/unit-testing-guide.pdf",
+        images: [
+            "./assets/images/project-images/stqa5.jpg",
+            "./assets/images/project-images/stqa5.jpg",
+            "./assets/images/project-images/stqa5.jpg"
+        ]
+    },
+    {
+        id: 14,
+        title: "Introduction to API Testing",
+        category: "stqa",
+        tags: ["API Testing", "Postman", "REST API"],
+        description: "Panduan lengkap tentang pengujian API dengan berbagai tools dan metodologi.",
+        thumbnail: "./assets/images/project-images/stqa6.jpg",
+        longDescription: `
+            <p>Dokumen ini memberikan pengenalan menyeluruh tentang API Testing:</p>
+            <ul>
+                <li>Fundamental API Testing</li>
+                <li>REST API Testing dengan Postman</li>
+                <li>Automation API Testing</li>
+                <li>Security Testing untuk API</li>
+                <li>Performance Testing API</li>
+            </ul>
+        `,
+        challenges: "Menyajikan konsep API testing yang kompleks dalam format yang mudah dipahami.",
+        downloadLink: "./assets/docs/api-testing-intro.pdf",
+        images: [
+            "./assets/images/project-images/stqa6.jpg",
+            "./assets/images/project-images/stqa6.jpg",
+            "./assets/images/project-images/stqa6.jpg"
+        ]
+    },
+    {
+        id: 15,
+        title: "Introduction to Selenium WebDriver",
+        category: "stqa",
+        tags: ["Selenium", "Web Automation", "Testing"],
+        description: "Panduan komprehensif tentang automasi pengujian web dengan Selenium WebDriver.",
+        thumbnail: "./assets/images/project-images/stqa7.jpg",
+        longDescription: `
+            <p>Proyek ini mencakup materi lengkap tentang Selenium WebDriver:</p>
+            <ul>
+                <li>Setup dan Konfigurasi Selenium</li>
+                <li>Basic dan Advanced Commands</li>
+                <li>Page Object Model</li>
+                <li>Test Automation Framework</li>
+                <li>Best Practices dan Tips</li>
+            </ul>
+        `,
+        challenges: "Menjelaskan konsep automasi testing yang kompleks dengan contoh praktis yang mudah diikuti.",
+        downloadLink: "./assets/docs/selenium-webdriver-guide.pdf",
+        images: [
+            "./assets/images/project-images/stqa7.jpg",
+            "./assets/images/project-images/stqa7.jpg",
+            "./assets/images/project-images/stqa7.jpg"
+        ]
+    },
+    {
+        id: 16,
+        title: "Introduction to Cypress",
+        category: "stqa",
+        tags: ["Cypress", "Web Automation", "Modern Testing"],
+        description: "Pengenalan lengkap tentang modern web testing menggunakan Cypress.",
+        thumbnail: "./assets/images/project-images/stqa8.png",
+        longDescription: `
+            <p>Dokumen ini memberikan pengenalan komprehensif tentang Cypress:</p>
+            <ul>
+                <li>Instalasi dan Setup Cypress</li>
+                <li>Writing First Test</li>
+                <li>Cypress Commands dan Assertions</li>
+                <li>Test Organization</li>
+                <li>CI/CD Integration</li>
+            </ul>
+        `,
+        challenges: "Menyajikan fitur-fitur modern Cypress dalam format yang mudah dipahami untuk pemula.",
+        downloadLink: "./assets/docs/cypress-testing-guide.pdf",
+        images: [
+            "./assets/images/project-images/stqa8.png",
+            "./assets/images/project-images/stqa8.png",
+            "./assets/images/project-images/stqa8.png"
+        ]
+    },
+    {
         id: 1,
         title: "EnergyPulse - Sistem Prediksi Konsumsi Listrik",
         category: "datamining",
@@ -328,6 +531,21 @@ function updateProjectImagePaths() {
                 return imagePath;
             });
         }
+        
+        // Update downloadLink path
+        if (project.downloadLink) {
+            if (isInSubfolder) {
+                // In subfolder, use ../ path
+                if (project.downloadLink.startsWith('./assets/')) {
+                    project.downloadLink = project.downloadLink.replace('./assets/', '../assets/');
+                }
+            } else {
+                // In root, use ./ path
+                if (project.downloadLink.startsWith('../assets/')) {
+                    project.downloadLink = project.downloadLink.replace('../assets/', './assets/');
+                }
+            }
+        }
     });
     
     console.log('Updated projectsData:', projectsData);
@@ -338,6 +556,14 @@ function updateProjectImagePaths() {
 
 // Get all unique categories for filtering
 const categories = [...new Set(projectsData.map(project => project.category))];
+
+// Map category IDs to display names
+const categoryNames = {
+    'webdev': 'Web Development',
+    'mobiledev': 'Mobile Development',
+    'datamining': 'Data Mining',
+    'stqa': 'Software Testing & QA'
+};
 
 // Export data for use in other scripts
 if (typeof module !== 'undefined' && module.exports) {

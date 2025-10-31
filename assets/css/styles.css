@@ -1486,6 +1486,24 @@ footer {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+.download-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    background: var(--accent);
+    color: white;
+}
+
+.download-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
 .detail-tags span {
     background: rgba(139, 92, 246, 0.2);
     color: var(--primary);

@@ -47,9 +47,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="sidebar-section">
                         <h3>Project Links</h3>
                         <div class="project-links">
-                            <a href="${project.githubLink}" target="_blank" class="github-link">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
+                            ${project.githubLink ? `
+                                <a href="${project.githubLink}" target="_blank" class="github-link">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            ` : ''}
+                            ${project.downloadLink ? `
+                                <a href="${project.downloadLink}" target="_blank" class="download-link">
+                                    <i class="fas fa-download"></i> Download PDF
+                                </a>
+                            ` : ''}
                         </div>
                     </div>
                     
