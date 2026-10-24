@@ -3,92 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek | Fariz Idham R.</title>
+    <meta name="description" content="Galeri lengkap karya dan proyek rekayasa perangkat lunak, sistem AI & pengujian software oleh Fariz Idham Ramdhani (ReyRiz).">
+    <title>Galeri Proyek | Fariz Idham Ramdhani</title>
+    
+    <!-- Icons & Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=4.2">
 </head>
-<body class="projects-page">
-    <nav class="main-nav">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">Portfolio</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="projects.html" class="active">Proyek</a></li>
-                <li><a href="about.html">Tentang</a></li>
-                <li><a href="index.html#contact">Kontak</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-    
-    <div class="page-header">
-        <div class="container">
-            <h1>Proyek Saya</h1>
-            <p>Koleksi proyek akademik dan personal saya</p>
-        </div>
+<body class="page-wrapper">
+
+    <!-- Ambient Dynamic Background -->
+    <div class="ambient-background">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
     </div>
-    
-    <div class="container">
-        <div class="projects-search-box">
-            <input type="text" id="project-search" placeholder="Cari proyek berdasarkan nama, teknologi, atau kategori...">
-            <button id="search-btn"><i class="fas fa-search"></i></button>
-        </div>
-        
-        <div class="projects-categories">
-            <button class="category-btn active" data-category="all">Semua Proyek</button>
-            <button class="category-btn" data-category="datamining">Data Mining</button>
-            <button class="category-btn" data-category="webdev">Pengembangan Web</button>
-            <button class="category-btn" data-category="mobiledev">Pengembangan Mobile</button>
-            <button class="category-btn" data-category="mobile">Mobile App</button>
-            <button class="category-btn" data-category="ai">Kecerdasan Buatan</button>
-            <button class="category-btn" data-category="database">Sistem Database</button>
-        </div>
-        
-        <div class="projects-grid" id="projects-container">
-            <!-- Project items will be loaded dynamically from project-data.js -->
-        </div>
-    </div>
-    
-    <footer>
+
+    <!-- Floating Glassmorphic Navbar -->
+    <header class="site-header">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>ReyRiz Portfolio</h3>
-                    <p>Menampilkan perjalanan saya di bidang Sistem Informasi</p>
+            <nav class="glass-nav">
+                <a href="index.html" class="nav-brand">
+                    <div class="brand-badge">FR</div>
+                    <div class="brand-text">Fariz<span>.dev</span></div>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="experience.html" class="nav-link">Pengalaman</a></li>
+                    <li><a href="projects.html" class="nav-link active">Proyek</a></li>
+                    <li><a href="certificates.html" class="nav-link">Sertifikat</a></li>
+                    <li><a href="about.html" class="nav-link">Tentang</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="sound-toggle-btn" title="Toggle Efek Suara Sci-Fi" aria-label="Toggle Sound">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <a href="index.html#contact" class="nav-cta-btn">
+                        <i class="fas fa-paper-plane"></i> Kontak
+                    </a>
+                    <button class="mobile-menu-btn" aria-label="Buka Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Tautan Cepat</h4>
-                    <ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-drawer">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a>
+        <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Pengalaman Karir</a>
+        <a href="projects.html" class="nav-link active"><i class="fas fa-laptop-code"></i> Galeri Proyek</a>
+        <a href="certificates.html" class="nav-link"><i class="fas fa-certificate"></i> Sertifikat</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-user"></i> Tentang Saya</a>
+        <a href="index.html#contact" class="nav-link copy-email-btn"><i class="fas fa-envelope"></i> Salin Email</a>
+    </div>
+
+    <main style="padding-top: 130px; padding-bottom: 90px;">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="section-header" style="margin-bottom: 45px;">
+                <span class="section-tag"><i class="fas fa-layer-group"></i> Works & Research</span>
+                <h1 class="section-title">Galeri Proyek Lengkap</h1>
+                <p class="section-subtitle">
+                    Koleksi aplikasi web, sistem mobile, model analitik AI, dan arsitektur pengujian kualitas software (STQA).
+                </p>
+            </div>
+
+            <!-- Filter & Live Search Bar -->
+            <div class="projects-filter-bar">
+                <div class="filter-pills">
+                    <button class="filter-btn active" data-category="all">Semua Proyek (10+)</button>
+                    <button class="filter-btn" data-category="webdev"><i class="fas fa-globe"></i> Web Dev</button>
+                    <button class="filter-btn" data-category="mobiledev"><i class="fas fa-mobile-alt"></i> Mobile App</button>
+                    <button class="filter-btn" data-category="datamining"><i class="fas fa-brain"></i> Data & AI</button>
+                    <button class="filter-btn" data-category="stqa"><i class="fas fa-vial"></i> QA & Testing</button>
+                </div>
+
+                <div class="projects-search-wrapper">
+                    <i class="fas fa-search projects-search-icon"></i>
+                    <input type="text" id="project-search-input" class="projects-search-input" placeholder="Cari nama, stack, atau deskripsi..." autocomplete="off">
+                </div>
+            </div>
+
+            <!-- Dynamic Projects Grid (Auto-rendered by main.js with spotlight glow & modal trigger) -->
+            <div class="projects-grid" id="full-projects-container">
+                <!-- Proyek dimuat secara dinamis dari portfolio-data.js -->
+            </div>
+
+            <!-- Info Bar -->
+            <div style="margin-top: 60px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+                <p>Klik kartu proyek mana pun untuk membuka popup detail interaktif, rincian tantangan, dan tautan repositori.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Fariz Idham Ramdhani</h3>
+                    <p>Mahasiswa Sistem Informasi Universitas Hasanuddin, Full-Stack Developer, AI Enthusiast, dan Editor Multimedia.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links-list">
                         <li><a href="index.html">Beranda</a></li>
-                        <li><a href="projects.html">Proyek</a></li>
-                        <li><a href="about.html">Tentang</a></li>
-                        <li><a href="index.html#contact">Kontak</a></li>
+                        <li><a href="experience.html">Pengalaman Karir</a></li>
+                        <li><a href="projects.html">Galeri Proyek</a></li>
+                        <li><a href="certificates.html">Sertifikat</a></li>
+                        <li><a href="about.html">Tentang Saya</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-social">
-                    <h4>Terhubung Dengan Saya</h4>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <div class="footer-col">
+                    <h4>Terhubung</h4>
+                    <p style="color:var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;">Makassar, Sulawesi Selatan, Indonesia</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/ReyRiz" target="_blank" class="btn-icon-only" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="btn-icon-only" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <button class="btn-icon-only copy-email-btn" title="Salin Email"><i class="fas fa-envelope"></i></button>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2025 Fariz Idham R. Hak cipta dilindungi.</p>
+                <p>&copy; 2026 Fariz Idham Ramdhani (ReyRiz). Hak cipta dilindungi.</p>
+                <p>Designed with Deep Space Obsidian & Cyber-Glassmorphism</p>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/project-data.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!-- Data & Master Script -->
+    <script src="assets/js/portfolio-data.js?v=4.0"></script>
+    <script src="assets/js/main.js?v=4.2"></script>
 </body>
 </html>

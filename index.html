@@ -3,188 +3,630 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Fariz Idham R.</title>
+    <meta name="description" content="Portfolio resmi Fariz Idham Ramdhani (ReyRiz) - Mahasiswa Sistem Informasi UNHAS, Full-Stack Developer, AI Enthusiast & Video Editor.">
+    <title>Fariz Idham Ramdhani | Full-Stack Developer & AI Enthusiast</title>
+    
+    <!-- Icons & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=4.2">
 </head>
-<body class="home-page">
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Halo, Saya <span class="highlight-text">Fariz Idham R.</span></h1>
-            <p class="tagline">Mahasiswa & Developer</p>
-            <div class="hero-buttons">
-                <a href="#about" class="btn primary-btn">Tentang Saya</a>
-                <a href="projects.html" class="btn secondary-btn">Lihat Proyek</a>
-            </div>
-            <div class="scroll-down">
-                <span>Gulir ke Bawah</span>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </div>
-    </header>    <nav class="main-nav">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">Portfolio</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Beranda</a></li>
-                <li><a href="projects.html">Proyek</a></li>
-                <li><a href="about.html">Tentang</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-    
-    <div class="container">
-        <section id="about" class="home-section">
-            <div class="section-header">
-                <h2>Tentang Saya</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/images/profile.jpg" alt="Fariz Idham R.">
-                </div>
-                <div class="about-text">
-                    <h3>Mahasiswa & Developer</h3>
-                    <p>Selamat datang di portfolio saya! Saya seorang mahasiswa yang passionate menempuh pendidikan di bidang Sistem Informasi dengan fokus pada pengembangan web dan data mining. Saya senang membangun hal-hal yang hidup di internet dan memecahkan masalah kompleks melalui kode.</p>
-                    <p>Saat ini, saya fokus memperluas pengetahuan di berbagai bidang ilmu komputer sambil mengerjakan proyek-proyek menarik yang menantang kemampuan saya.</p>
-                    <a href="about.html" class="btn outline-btn">Pelajari Lebih Lanjut</a>
-                </div>
-            </div>
-        </section>
-        
-        <section id="featured-projects" class="home-section">
-            <div class="section-header">
-                <h2>Proyek Unggulan</h2>
-                <div class="section-line"></div>
-            </div>
-            <p class="section-intro">Berikut adalah beberapa karya terbaru saya di berbagai mata kuliah. Setiap proyek mewakili perjalanan belajar dan pendekatan pemecahan masalah saya.</p>
-            
-            <div class="project-list featured" id="featured-projects-container">
-                <!-- Featured projects akan dimuat secara dinamis oleh JavaScript -->
-            </div>
-            
-            <div class="view-all-container">
-                <a href="projects.html" class="view-all-button">
-                    <span>Lihat Semua Proyek</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </section>
-        
-        <section id="skills" class="home-section">
-            <div class="section-header">
-                <h2>Keahlian Saya</h2>
-                <div class="section-line"></div>
-            </div>
-            
-            <div class="skills-container">
-                <div class="skills-category">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
-                    <ul class="skills-list">
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C++</li>
-                        <li>PHP</li>
-                    </ul>
-                </div>
-                
-                <div class="skills-category">
-                    <h3><i class="fas fa-laptop-code"></i> Pengembangan Web</h3>
-                    <ul class="skills-list">
-                        <li>HTML/CSS</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>Laravel</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
-                
-                <div class="skills-category">
-                    <h3><i class="fas fa-database"></i> Ilmu Data</h3>
-                    <ul class="skills-list">
-                        <li>Data Mining</li>
-                        <li>Machine Learning</li>
-                        <li>SQL</li>
-                        <li>Visualisasi Data</li>
-                        <li>Pandas</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <section id="contact" class="home-section">
-            <div class="section-header">
-                <h2>Mari Terhubung</h2>
-                <div class="section-line"></div>
-            </div>
-            <p class="section-intro">Jangan ragu untuk menghubungi saya jika Anda ingin berkolaborasi dalam sebuah proyek atau hanya ingin menyapa!</p>
-            
-            <div class="contact-options">
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>farizidhamr@gmail.com</p>
-                    <a href="mailto:farizidhamr@gmail.com" class="contact-link">Kirim Email</a>
-                </div>
-                
-                <div class="contact-card">
-                    <i class="fab fa-github"></i>
-                    <h3>GitHub</h3>
-                    <p>github.com/ReyRiz</p>
-                    <a href="https://github.com/ReyRiz" target="_blank" class="contact-link">Lihat Profil</a>
-                </div>
-                
-                <div class="contact-card">
-                    <i class="fab fa-linkedin"></i>
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/farizidham</p>
-                    <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="contact-link">Terhubung</a>
-                </div>
-            </div>
-        </section>
+<body class="page-wrapper">
+
+    <!-- Ambient Dynamic Background -->
+    <div class="ambient-background">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
     </div>
-    
-    <footer>
+
+    <!-- Floating Glassmorphic Navbar -->
+    <header class="site-header">
         <div class="container">
-            <div class="footer-content">                <div class="footer-logo">
-                    <h3>Portfolio</h3>
-                    <p>Menampilkan perjalanan saya di bidang Ilmu Komputer</p>
+            <nav class="glass-nav">
+                <a href="index.html" class="nav-brand">
+                    <div class="brand-badge">FR</div>
+                    <div class="brand-text">Fariz<span>.dev</span></div>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Beranda</a></li>
+                    <li><a href="experience.html" class="nav-link">Pengalaman</a></li>
+                    <li><a href="projects.html" class="nav-link">Proyek</a></li>
+                    <li><a href="certificates.html" class="nav-link">Sertifikat</a></li>
+                    <li><a href="about.html" class="nav-link">Tentang</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="sound-toggle-btn" title="Toggle Efek Suara Sci-Fi" aria-label="Toggle Sound">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <a href="#contact" class="nav-cta-btn">
+                        <i class="fas fa-paper-plane"></i> Kontak
+                    </a>
+                    <button class="mobile-menu-btn" aria-label="Buka Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Tautan Cepat</h4>
-                    <ul>
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="projects.html">Proyek</a></li>
-                        <li><a href="about.html">Tentang</a></li>
-                        <li><a href="#contact">Kontak</a></li>
-                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-drawer">
+        <a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Beranda</a>
+        <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Pengalaman Karir</a>
+        <a href="projects.html" class="nav-link"><i class="fas fa-laptop-code"></i> Galeri Proyek</a>
+        <a href="certificates.html" class="nav-link"><i class="fas fa-certificate"></i> Sertifikat</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-user"></i> Tentang Saya</a>
+        <a href="#contact" class="nav-link copy-email-btn"><i class="fas fa-envelope"></i> Salin Email</a>
+    </div>
+
+    <main>
+        <!-- --- EDITORIAL HERO SECTION (LEFT-ALIGNED WITH 3D CUTOUT RIGHT) --- -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-editorial-split">
+                    <!-- Left: Content & Actions (Clean, Left-Aligned) -->
+                    <div class="hero-content-left">
+                        <div class="status-chip" style="margin-bottom: 14px;">
+                            <span class="pulse-dot"></span>
+                            <span>Open to Work / Internships & Collabs</span>
+                        </div>
+
+                        <h1 class="hero-editorial-title">
+                            FARIZ IDHAM<br>
+                            <span class="gradient-text">RAMDHANI<span style="color:var(--accent-red)">.</span></span>
+                        </h1>
+
+                        <p class="hero-editorial-subtitle">
+                            ReyRiz • Full-Stack Developer, AI Enthusiast & Video Editor
+                        </p>
+
+                        <p class="hero-editorial-quote">
+                            "Membangun arsitektur perangkat lunak cerdas dan konten visual kreatif yang menghubungkan inovasi teknologi dengan dampak nyata."
+                        </p>
+
+                        <div class="hero-stats-row" style="margin-bottom: 24px; padding-top: 0;">
+                            <div class="stat-item">
+                                <div class="stat-number">12<span>+</span></div>
+                                <div class="stat-label">Proyek Selesai</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number">5<span>+</span></div>
+                                <div class="stat-label">Peran Karir</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number">3<span>+</span></div>
+                                <div class="stat-label">Tahun Coding</div>
+                            </div>
+                        </div>
+
+                        <div class="hero-cta-group">
+                            <a href="projects.html" class="btn btn-primary">
+                                <i class="fas fa-layer-group"></i> Jelajahi Proyek
+                            </a>
+                            <button class="btn btn-secondary copy-email-btn">
+                                <i class="far fa-copy"></i> Salin Email
+                            </button>
+                            <a href="about.html" class="btn btn-secondary">
+                                <i class="fas fa-user"></i> Tentang Saya
+                            </a>
+                        </div>
+
+                        <div class="hero-socials-strip" style="justify-content: flex-start; margin-top: 24px;">
+                            <a href="https://github.com/ReyRiz" target="_blank" class="btn-icon-only" title="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="btn-icon-only" title="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://instagram.com/farizidham" target="_blank" class="btn-icon-only" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <button class="btn-icon-only copy-email-btn" title="Salin Email">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Cutout Photo Unboxed with Giant Backdrop Typography & Floating Badges -->
+                    <div class="hero-visual-right">
+                        <!-- Giant Backdrop Typography -->
+                        <div class="giant-backdrop-typography" aria-hidden="true">
+                            <span>FARIZ'S</span>
+                            <span>PORTFOLIO</span>
+                        </div>
+
+                        <!-- Cutout Photo (Fariz in UNHAS Red Almamater Jacket) with Bottom Fade Mask, Unboxed -->
+                        <div class="hero-photo-wrapper">
+                            <img src="assets/images/fariz-hero.png" alt="Fariz Idham Ramdhani" class="hero-cutout-img" onerror="this.src='assets/images/fariz-original.jpg'">
+                        </div>
+
+                        <!-- Floating Badges Around Fariz -->
+                        <div class="hero-floating-badge badge-pos-left-top">
+                            <i class="fas fa-university" style="color:var(--accent-red);"></i>
+                            <span>S1 Sistem Informasi UNHAS</span>
+                        </div>
+
+                        <div class="hero-floating-badge badge-pos-right-top">
+                            <i class="fas fa-laptop-code" style="color:var(--accent-red);"></i>
+                            <span>Full-Stack & AI Dev</span>
+                        </div>
+
+                        <div class="hero-floating-badge badge-pos-left-bottom">
+                            <i class="fas fa-boxes-stacked" style="color:#d97706;"></i>
+                            <span>BRRADS • WMS Dev</span>
+                        </div>
+
+                        <div class="hero-floating-badge badge-pos-right-bottom">
+                            <i class="fas fa-film" style="color:var(--accent-red);"></i>
+                            <span>Reza Auditore • Editor</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="footer-social">
-                    <h4>Terhubung Dengan Saya</h4>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+
+                <!-- Interactive Developer Terminal directly below the split hero -->
+                <div style="margin-top: 50px;">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <div class="dot dot-red"></div>
+                                <div class="dot dot-yellow"></div>
+                                <div class="dot dot-green"></div>
+                            </div>
+                            <div class="terminal-title">
+                                <i class="fas fa-terminal"></i> bash - guest@reyriz:~
+                            </div>
+                            <div class="terminal-badge">LIVE CLI</div>
+                        </div>
+
+                        <div class="terminal-body" id="terminal-body">
+                            <div class="terminal-log">
+                                <span style="color:var(--accent-red);">➜</span> <strong style="color:var(--text-primary);">System Initialized:</strong> Fariz Idham Ramdhani [ReyRiz]<br>
+                                <span style="color:var(--accent-red);">➜</span> <strong style="color:var(--text-primary);">Affiliation:</strong> <span style="color:var(--accent-emerald);">Universitas Hasanuddin — Sistem Informasi</span><br>
+                                <span style="color:var(--accent-red);">➜</span> Ketik <span style="color:var(--accent-red); font-weight:600;">'help'</span> atau klik pintasan di bawah untuk navigasi:
+                            </div>
+                            
+                            <div class="terminal-input-row">
+                                <span class="terminal-prompt">guest@reyriz:~$</span>
+                                <input type="text" id="terminal-input" class="terminal-input" placeholder="ketik perintah (contoh: help)" autocomplete="off" spellcheck="false">
+                            </div>
+                        </div>
+
+                        <div class="terminal-commands-hint">
+                            <span title="Bantuan">help</span>
+                            <span title="Profil">about</span>
+                            <span title="Keahlian">skills</span>
+                            <span title="Daftar Proyek">projects</span>
+                            <span title="Pengalaman Kerja">exp</span>
+                            <span title="Kontak">contact</span>
+                            <span title="Bersihkan">clear</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- --- BENTO GRID HIGHLIGHTS (INSPIRED BY REFERENCE POSTER) --- -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-th-large"></i> Overview</span>
+                    <h2 class="section-title">Keahlian & Sorotan Utama</h2>
+                    <p class="section-subtitle">Pondasi teknis dan latar belakang yang membentuk pendekatan rekayasa perangkat lunak saya.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Bento 1: Profile & Bio -->
+                    <div class="bento-card-profile spotlight-card">
+                        <div>
+                            <div class="bento-profile-top">
+                                <div class="bento-avatar-wrapper">
+                                    <img src="assets/images/fariz-original.jpg" alt="Fariz Idham Ramdhani" class="bento-avatar" style="object-position: center 15%;" onerror="this.src='assets/images/profile.jpg'">
+                                </div>
+                                <div class="bento-profile-info">
+                                    <h3>Fariz Idham Ramdhani</h3>
+                                    <p><i class="fas fa-code"></i> ReyRiz • S1 Sistem Informasi</p>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7;">
+                                Mahasiswa FMIPA UNHAS yang aktif merancang aplikasi web modern berkinerja tinggi, algoritma analitik prediktif, serta pengujian sistem otomatis (STQA).
+                            </p>
+                        </div>
+                        <div style="margin-top: 24px;">
+                            <a href="about.html" class="btn btn-secondary" style="width: 100%;">
+                                <i class="fas fa-user"></i> Baca Profil Lengkap & Pendidikan
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bento 2: Quick Stats -->
+                    <div class="bento-card-stats spotlight-card">
+                        <div class="bento-stat-box">
+                            <i class="fas fa-layer-group"></i>
+                            <div class="bento-stat-value">12+</div>
+                            <div class="bento-stat-label">Proyek Akademik & Industri</div>
+                        </div>
+                        <div class="bento-stat-box">
+                            <i class="fas fa-building"></i>
+                            <div class="bento-stat-value">5+ Peran</div>
+                            <div class="bento-stat-label">BRRADS, UNHAS, Reza Auditore</div>
+                        </div>
+                        <div class="bento-stat-box">
+                            <i class="fas fa-university"></i>
+                            <div class="bento-stat-value">UNHAS</div>
+                            <div class="bento-stat-label">S1 Sistem Informasi (2023 - 2027)</div>
+                        </div>
+                        <div class="bento-stat-box">
+                            <i class="fas fa-certificate"></i>
+                            <div class="bento-stat-value">Certified</div>
+                            <div class="bento-stat-label">Web, AI, STQA & Lab Assistant</div>
+                        </div>
+                    </div>
+
+                    <!-- Bento 3: Tech Stack Highlights -->
+                    <div class="bento-card-stack spotlight-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-primary);">
+                                <i class="fas fa-bolt" style="color: var(--secondary);"></i> Core Tech Stack Favorit
+                            </h3>
+                            <a href="about.html" style="font-size: 0.85rem; color: var(--primary-light);">Lihat Semua Matriks →</a>
+                        </div>
+                        <div class="tech-pills-wrap">
+                            <span class="tech-pill"><i class="fab fa-react"></i> React.js</span>
+                            <span class="tech-pill"><i class="fab fa-laravel"></i> Laravel</span>
+                            <span class="tech-pill"><i class="fab fa-python"></i> Python (ML & Scraping)</span>
+                            <span class="tech-pill"><i class="fab fa-js"></i> JavaScript ES6+</span>
+                            <span class="tech-pill"><i class="fab fa-java"></i> Java (OOP)</span>
+                            <span class="tech-pill"><i class="fas fa-robot"></i> Selenium & Cypress</span>
+                            <span class="tech-pill"><i class="fas fa-database"></i> MySQL & MongoDB</span>
+                            <span class="tech-pill"><i class="fas fa-film"></i> Adobe Premiere Pro</span>
+                            <span class="tech-pill"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                        </div>
+                    </div>
+
+                    <!-- Bento 4: Current Focus -->
+                    <div class="bento-card-focus spotlight-card">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-primary); margin-bottom: 8px;">
+                            <i class="fas fa-crosshairs" style="color: var(--accent-emerald);"></i> Fokus Saat Ini
+                        </h3>
+                        <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
+                            • Mengembangkan sistem web skala enterprise (WMS & E-Commerce)<br>
+                            • Eksplorasi Machine Learning & Time Series AI<br>
+                            • Otomasi Pengujian QA
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- CREATIVE DIRECTION & SHORT-FORM VIDEO SHOWREEL SUITE --- -->
+        <section class="section-padding creative-media-section" id="creative-media">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-film"></i> Creative Direction & Post-Production</span>
+                    <h2 class="section-title">Videography & High-Retention Short-Form</h2>
+                    <p class="section-subtitle">
+                        Portofolio penyuntingan video vertikal (9:16) berkecepatan tinggi dengan optimasi hook 3 detik pertama, kinetic typography, dan audio-visual storytelling untuk content creator serta kampanye komersial.
+                    </p>
+                </div>
+
+                <!-- Video Editing Metric Highlights Bar -->
+                <div class="reel-metrics-bar">
+                    <div class="reel-metric-item">
+                        <div class="reel-metric-num">100+</div>
+                        <div class="reel-metric-desc">Video Pendek Diproduksi</div>
+                    </div>
+                    <div class="reel-metric-divider"></div>
+                    <div class="reel-metric-item">
+                        <div class="reel-metric-num">0 – 3s</div>
+                        <div class="reel-metric-desc">Critical Hook Optimization</div>
+                    </div>
+                    <div class="reel-metric-divider"></div>
+                    <div class="reel-metric-item">
+                        <div class="reel-metric-num">+35%</div>
+                        <div class="reel-metric-desc">Average Retention Boost</div>
+                    </div>
+                    <div class="reel-metric-divider"></div>
+                    <div class="reel-metric-item">
+                        <div class="reel-metric-num">4K DCI</div>
+                        <div class="reel-metric-desc">Cinematic Color & Grade</div>
+                    </div>
+                </div>
+
+                <!-- 4 Sleek Vertical Video Cards (9:16 Aspect Ratio) -->
+                <div class="video-reels-grid">
+                    <!-- Reel 1: Reza Auditore Streamer / Gaming Highlights -->
+                    <div class="reel-card spotlight-card">
+                        <div class="reel-media-wrapper">
+                            <img src="assets/images/reel-gaming.jpg" alt="Reza Auditore Streamer Editing" class="reel-thumb">
+                            <div class="reel-badge-top">
+                                <span class="reel-tag-client"><i class="fas fa-gamepad"></i> Reza Auditore</span>
+                                <span class="reel-timecode"><i class="fas fa-play"></i> 00:45</span>
+                            </div>
+                            <div class="reel-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="reel-info-overlay">
+                                <div class="reel-category">Gaming & Streamer High-Pacing</div>
+                                <h4 class="reel-title">Fast-Cut Highlights & Sound Stings</h4>
+                                <div class="reel-specs">
+                                    <span class="reel-spec-pill"><i class="fas fa-bolt"></i> Pacing Cut</span>
+                                    <span class="reel-spec-pill"><i class="fas fa-chart-line"></i> +38% Retensi</span>
+                                    <span class="reel-spec-pill">Premiere Pro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reel 2: Commercial Brand Campaign - BRRADS Industries -->
+                    <div class="reel-card spotlight-card">
+                        <div class="reel-media-wrapper">
+                            <img src="assets/images/reel-commercial.jpg" alt="BRRADS Streetwear Commercial" class="reel-thumb">
+                            <div class="reel-badge-top">
+                                <span class="reel-tag-client"><i class="fas fa-tshirt"></i> BRRADS Industries</span>
+                                <span class="reel-timecode"><i class="fas fa-play"></i> 00:30</span>
+                            </div>
+                            <div class="reel-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="reel-info-overlay">
+                                <div class="reel-category">Commercial & Brand Promo</div>
+                                <h4 class="reel-title">Cinematic Streetwear & Motion Grade</h4>
+                                <div class="reel-specs">
+                                    <span class="reel-spec-pill"><i class="fas fa-palette"></i> Color Grade</span>
+                                    <span class="reel-spec-pill"><i class="fas fa-bullhorn"></i> IG / TikTok Ads</span>
+                                    <span class="reel-spec-pill">After Effects</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reel 3: Viral Hook & Kinetic Typography -->
+                    <div class="reel-card spotlight-card">
+                        <div class="reel-media-wrapper">
+                            <img src="assets/images/reel-hook.jpg" alt="Kinetic Typography & Viral Hook" class="reel-thumb">
+                            <div class="reel-badge-top">
+                                <span class="reel-tag-client"><i class="fab fa-youtube"></i> YouTube Shorts</span>
+                                <span class="reel-timecode"><i class="fas fa-play"></i> 00:58</span>
+                            </div>
+                            <div class="reel-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="reel-info-overlay">
+                                <div class="reel-category">Content Hook & Retention</div>
+                                <h4 class="reel-title">Kinetic Subtitles & Sound FX Sync</h4>
+                                <div class="reel-specs">
+                                    <span class="reel-spec-pill"><i class="fas fa-closed-captioning"></i> Dynamic Captions</span>
+                                    <span class="reel-spec-pill"><i class="fas fa-fire"></i> Viral Pacing</span>
+                                    <span class="reel-spec-pill">CapCut Pro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reel 4: Cinematic Tech Macro B-Roll -->
+                    <div class="reel-card spotlight-card">
+                        <div class="reel-media-wrapper">
+                            <img src="assets/images/reel-broll.jpg" alt="Cinematic Tech B-Roll" class="reel-thumb">
+                            <div class="reel-badge-top">
+                                <span class="reel-tag-client"><i class="fas fa-laptop"></i> Tech Review</span>
+                                <span class="reel-timecode"><i class="fas fa-play"></i> 00:40</span>
+                            </div>
+                            <div class="reel-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="reel-info-overlay">
+                                <div class="reel-category">Cinematic B-Roll & Macro</div>
+                                <h4 class="reel-title">RGB Hardware Sync & Sound Design</h4>
+                                <div class="reel-specs">
+                                    <span class="reel-spec-pill"><i class="fas fa-camera"></i> 60fps Macro</span>
+                                    <span class="reel-spec-pill"><i class="fas fa-headphones"></i> Foley Audio</span>
+                                    <span class="reel-spec-pill">Adobe Premiere</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Editing Arsenal & Philosophy Strip -->
+                <div class="reel-workflow-strip spotlight-card">
+                    <div class="reel-workflow-info">
+                        <h4 class="reel-workflow-title">
+                            <i class="fas fa-sliders-h" style="color: var(--secondary);"></i>
+                            Filosofi Editing: Retensi 3 Detik Pertama & Sound-Driven Cut
+                        </h4>
+                        <p class="reel-workflow-text">
+                            Kombinasi antara audio design multi-layer (riser, whoosh, hit), color grading sinematik, dan sinkronisasi ritme beat memastikan setiap detik video memiliki daya tarik tinggi untuk algoritma YouTube Shorts, Instagram Reels, dan TikTok.
+                        </p>
+                    </div>
+                    <div class="reel-tools-badge-wrap">
+                        <span class="reel-tool-tag"><i class="fas fa-film"></i> Premiere Pro</span>
+                        <span class="reel-tool-tag"><i class="fas fa-magic"></i> After Effects</span>
+                        <span class="reel-tool-tag"><i class="fas fa-scissors"></i> CapCut Desktop</span>
+                        <span class="reel-tool-tag"><i class="fas fa-headphones"></i> Adobe Audition</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- FEATURED PROJECTS SHOWCASE --- -->
+        <section class="section-padding" id="featured-work">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-star"></i> Showcase</span>
+                    <h2 class="section-title">Karya & Proyek Pilihan</h2>
+                    <p class="section-subtitle">Beberapa inovasi perangkat lunak dan analitik prediktif yang telah saya rancang.</p>
+                </div>
+
+                <!-- Projects Grid Loaded Dynamically with Mouse Spotlight & Drawer Modal -->
+                <div class="projects-grid" id="home-featured-projects">
+                    <!-- Diisi otomatis oleh main.js dari portfolio-data.js -->
+                </div>
+
+                <div style="text-align: center; margin-top: 48px;">
+                    <a href="projects.html" class="btn btn-secondary">
+                        <i class="fas fa-th-list"></i> Lihat Seluruh 12+ Proyek Lengkap <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- CAREER / EXPERIENCE SNAPSHOT --- -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-briefcase"></i> Karir & Pengalaman</span>
+                    <h2 class="section-title">Rekam Jejak Profesional</h2>
+                    <p class="section-subtitle">Pengalaman nyata dari industri hingga laboratorium akademik universitas.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <!-- Card 1: BRRADS Industries -->
+                    <div class="timeline-company-block">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-card spotlight-card">
+                            <div class="company-header">
+                                <div class="company-title-wrap">
+                                    <div class="company-icon-box"><i class="fas fa-cat"></i></div>
+                                    <div>
+                                        <h3 class="company-name">BRRADS Industries</h3>
+                                        <div class="company-meta"><i class="fas fa-map-marker-alt"></i> Makassar, Indonesia</div>
+                                    </div>
+                                </div>
+                                <span class="company-badge-duration"><i class="far fa-clock"></i> Total 10 bln</span>
+                            </div>
+                            <div class="company-roles-list">
+                                <div class="role-item">
+                                    <div class="role-dot"></div>
+                                    <h4 class="role-title">Editor & IT Staff</h4>
+                                    <div class="role-sub-meta">
+                                        <span class="role-type-badge">Kontrak</span>
+                                        <span>Jun 2026 - Saat ini · 5 bln</span>
+                                        <span>Hybrid</span>
+                                    </div>
+                                    <p class="role-desc">Mendukung operasional IT harian dan produksi konten kreatif perusahaan.</p>
+                                </div>
+                                <div class="role-item">
+                                    <div class="role-dot"></div>
+                                    <h4 class="role-title">Web Developer & Editor</h4>
+                                    <div class="role-sub-meta">
+                                        <span class="role-type-badge">Magang</span>
+                                        <span>Jan 2026 - Jun 2026 · 6 bln</span>
+                                        <span>On-site</span>
+                                    </div>
+                                    <p class="role-desc">Merancang & membangun <strong>Warehouse Management System (WMS)</strong> berbasis web untuk pencatatan stok opname dan manajemen inventori gudang real-time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Reza Auditore -->
+                    <div class="timeline-company-block">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-card spotlight-card">
+                            <div class="company-header">
+                                <div class="company-title-wrap">
+                                    <div class="company-icon-box"><i class="fas fa-video"></i></div>
+                                    <div>
+                                        <h3 class="company-name">Reza Auditore (Content Creator / Streamer)</h3>
+                                        <div class="company-meta"><i class="fas fa-globe"></i> Indonesia (Hybrid)</div>
+                                    </div>
+                                </div>
+                                <span class="company-badge-duration"><i class="far fa-clock"></i> 1 thn 4 bln</span>
+                            </div>
+                            <div class="company-roles-list">
+                                <div class="role-item">
+                                    <div class="role-dot"></div>
+                                    <h4 class="role-title">Lead Video Editor</h4>
+                                    <div class="role-sub-meta">
+                                        <span class="role-type-badge">Purnawaktu</span>
+                                        <span>Jul 2025 - Saat ini</span>
+                                    </div>
+                                    <p class="role-desc">Mentransformasikan rekaman livestream panjang menjadi klip dan reels dengan retensi tinggi untuk YouTube, TikTok, dan Instagram.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 36px;">
+                    <a href="experience.html" class="btn btn-secondary">
+                        <i class="fas fa-history"></i> Lihat Semua Riwayat Pekerjaan & Lab Assistant UNHAS <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- CONTACT / CONNECT SECTION --- -->
+        <section class="section-padding" id="contact">
+            <div class="container">
+                <div class="spotlight-card" style="text-align: center; padding: 60px 30px; background: radial-gradient(circle at center, rgba(99, 102, 241, 0.12) 0%, rgba(16, 24, 44, 0.7) 100%);">
+                    <span class="section-tag"><i class="fas fa-handshake"></i> Mari Terhubung</span>
+                    <h2 class="section-title" style="margin-top: 12px;">Tertarik untuk Berkolaborasi?</h2>
+                    <p class="section-subtitle" style="max-width: 620px; margin: 0 auto 30px auto;">
+                        Saya selalu terbuka untuk peluang magang, proyek freelance, atau diskusi seputar rekayasa software dan AI. Mari wujudkan ide Anda bersama!
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap;">
+                        <button class="btn btn-primary copy-email-btn">
+                            <i class="far fa-copy"></i> Salin Email (farizidhamr@gmail.com)
+                        </button>
+                        <a href="mailto:farizidhamr@gmail.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Buka Aplikasi Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-linkedin-in"></i> Terhubung di LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- --- FOOTER --- -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Fariz Idham Ramdhani</h3>
+                    <p>Mahasiswa Sistem Informasi Universitas Hasanuddin, Full-Stack Developer, AI Enthusiast, dan Editor Multimedia.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="experience.html">Pengalaman Karir</a></li>
+                        <li><a href="projects.html">Galeri Proyek</a></li>
+                        <li><a href="certificates.html">Sertifikat</a></li>
+                        <li><a href="about.html">Tentang Saya</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Terhubung</h4>
+                    <p style="color:var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;">Makassar, Sulawesi Selatan, Indonesia</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/ReyRiz" target="_blank" class="btn-icon-only" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="btn-icon-only" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <button class="btn-icon-only copy-email-btn" title="Salin Email"><i class="fas fa-envelope"></i></button>
+                    </div>
+                </div>
+            </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 Fariz Idham R. Hak cipta dilindungi.</p>
+                <p>&copy; 2026 Fariz Idham Ramdhani (ReyRiz). Hak cipta dilindungi.</p>
+                <p>Designed with Bespoke Editorial Studio & UNHAS Crimson Architecture</p>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/project-data.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!-- Scripts: Single Source of Truth & Main Interactivity -->
+    <script src="assets/js/portfolio-data.js?v=4.0"></script>
+    <script src="assets/js/main.js?v=4.2"></script>
 </body>
 </html>

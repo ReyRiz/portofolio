@@ -3,128 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Saya | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body class="about-page">
-    <a href="index.html" class="back-button">
-        <i class="fas fa-arrow-left"></i> Kembali ke Beranda
-    </a>
+    <meta name="description" content="Tentang Fariz Idham Ramdhani (ReyRiz) - Profil, Filosofi Rekayasa Software, Matriks Keahlian Lengkap, dan Pendidikan Sistem Informasi UNHAS.">
+    <title>Tentang Saya | Fariz Idham Ramdhani</title>
     
-    <div class="container">
-        <header class="about-header">
-            <div class="header-content">
-                <h1>Tentang <span>Saya</span></h1>
-                <div class="header-line"></div>
-            </div>
-        </header>
-        
-        <div class="about-section">
-            <div class="profile-area">
-                <div class="profile-pic-container">
-                    <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-                    <div class="profile-overlay"></div>
+    <!-- Icons & Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=4.2">
+</head>
+<body class="page-wrapper">
+
+    <!-- Ambient Dynamic Background -->
+    <div class="ambient-background">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Floating Glassmorphic Navbar -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="glass-nav">
+                <a href="index.html" class="nav-brand">
+                    <div class="brand-badge">FR</div>
+                    <div class="brand-text">Fariz<span>.dev</span></div>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="experience.html" class="nav-link">Pengalaman</a></li>
+                    <li><a href="projects.html" class="nav-link">Proyek</a></li>
+                    <li><a href="certificates.html" class="nav-link">Sertifikat</a></li>
+                    <li><a href="about.html" class="nav-link active">Tentang</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="sound-toggle-btn" title="Toggle Efek Suara Sci-Fi" aria-label="Toggle Sound">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <a href="index.html#contact" class="nav-cta-btn">
+                        <i class="fas fa-paper-plane"></i> Kontak
+                    </a>
+                    <button class="mobile-menu-btn" aria-label="Buka Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
-                <h2 class="profile-name">Fariz Idham R.</h2>
-                <p class="profile-title">Mahasiswa Sistem Informasi</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-drawer">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a>
+        <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Pengalaman Karir</a>
+        <a href="projects.html" class="nav-link"><i class="fas fa-laptop-code"></i> Galeri Proyek</a>
+        <a href="certificates.html" class="nav-link"><i class="fas fa-certificate"></i> Sertifikat</a>
+        <a href="about.html" class="nav-link active"><i class="fas fa-user"></i> Tentang Saya</a>
+        <a href="index.html#contact" class="nav-link copy-email-btn"><i class="fas fa-envelope"></i> Salin Email</a>
+    </div>
+
+    <main style="padding-top: 130px; padding-bottom: 90px;">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="section-header" style="margin-bottom: 50px;">
+                <span class="section-tag"><i class="fas fa-id-card"></i> Biography & Vision</span>
+                <h1 class="section-title">Tentang Saya & Filosofi</h1>
+                <p class="section-subtitle">
+                    Perjalanan belajar, visi rekayasa teknologi, dan matriks keahlian mendalam.
+                </p>
             </div>
-            
-            <div class="content-area">
-                <section class="about-me-section">
-                    <h2><i class="fas fa-user"></i> Siapa Saya</h2>
-                    <p>
-                        Halo! Saya <span class="highlight">Fariz Idham R</span> yang dikenal sebagai ReyRiz, seorang <span class="highlight">Mahasiswa Sistem Informasi</span> 
-                        dari Universitas Hasanuddin, Fakultas MIPA, Departemen Matematika. Saya memiliki passion yang kuat dalam pengembangan web, 
-                        data analysis, dan UI/UX design. Saya senang menciptakan solusi inovatif yang memecahkan masalah dunia nyata.
-                    </p>
-                    <p>
-                        Pendekatan saya menggabungkan kreativitas dengan keunggulan teknis untuk menghasilkan hasil yang luar biasa. 
-                        Saat ini sedang menempuh pendidikan S1 di Program Studi Sistem Informasi, saya fokus pada pengembangan pengetahuan 
-                        dalam berbagai teknologi dan metodologi. Saya percaya pada pembelajaran berkelanjutan dan menerapkan konsep-konsep 
-                        baru ke dalam proyek-proyek praktis.
-                    </p>
-                </section>
-                <section class="journey-section">
-                    <h2><i class="fas fa-road"></i> Perjalanan Saya</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-date">2023 - Sekarang</div>
-                            <div class="timeline-content">
-                                <h3>Mahasiswa Sistem Informasi</h3>
-                                <p>Saat ini menempuh pendidikan S1 di Program Studi Sistem Informasi, Universitas Hasanuddin. Fokus pada pengembangan web, kecerdasan buatan, analisis data, dan UI/UX design sambil mengerjakan berbagai proyek untuk meningkatkan kemampuan teknis.</p>
-                            </div>
+
+            <!-- Bento Editorial Profile Section (Inspired by Poster Reference) -->
+            <div class="bento-grid" style="margin-bottom: 60px;">
+                <!-- Left: Big Photo & Persona Card -->
+                <div class="bento-card-profile spotlight-card" style="grid-column: span 5;">
+                    <div style="text-align: center; margin-bottom: 24px;">
+                        <div style="position: relative; width: 180px; height: 180px; margin: 0 auto 18px auto;">
+                            <img src="assets/images/fariz-original.jpg" alt="Fariz Idham Ramdhani" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%; border-radius: 50%; border: 3px solid var(--secondary); box-shadow: 0 0 30px var(--secondary-glow); background: #ffffff;" onerror="this.src='assets/images/profile.jpg'">
+                            <span class="pulse-dot" style="position: absolute; bottom: 12px; right: 18px; width: 14px; height: 14px;"></span>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">2022 - 2023</div>
-                            <div class="timeline-content">
-                                <h3>UI/UX Designer & Game Developer</h3>
-                                <p>Mulai fokus pada desain UI/UX dan pengembangan game menggunakan Unity. Juga aktif sebagai moderator Discord dan editor video untuk berbagai konten kreatif.</p>
-                            </div>
+                        <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-primary); margin-bottom: 4px;">Fariz Idham Ramdhani</h2>
+                        <p style="color: var(--secondary); font-size: 0.95rem; font-weight: 600;">ReyRiz • Full-Stack Dev & AI Enthusiast</p>
+                        <p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 4px;"><i class="fas fa-map-marker-alt"></i> Universitas Hasanuddin, Makassar</p>
+                    </div>
+
+                    <div style="background: rgba(6, 182, 212, 0.04); border: 1px solid rgba(6, 182, 212, 0.18); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px;">
+                        <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--secondary-light); margin-bottom: 8px; font-family: var(--font-mono);">
+                            <i class="fas fa-quote-left"></i> Core Principle
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">2021 - 2022</div>
-                            <div class="timeline-content">
-                                <h3>Programmer Otodidak</h3>
-                                <p>Memulai perjalanan programming dengan mempelajari HTML, CSS, dan JavaScript melalui kursus online dan proyek personal. Membangun beberapa website kecil untuk melatih kemampuan.</p>
-                            </div>
+                        <p style="font-size: 0.9rem; color: var(--text-highlight); font-style: italic; line-height: 1.6;">
+                            "Menggabungkan ketelitian algoritma dengan kepekaan desain visual untuk menciptakan sistem digital yang cepat, andal, dan memecahkan masalah nyata."
+                        </p>
+                    </div>
+
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-primary copy-email-btn" style="flex: 1;">
+                            <i class="fas fa-envelope"></i> Hubungi
+                        </button>
+                        <a href="https://github.com/ReyRiz" target="_blank" class="btn btn-secondary" style="flex: 1;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Detailed Story & Education -->
+                <div class="bento-card-stats spotlight-card" style="grid-column: span 7; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+                            <span class="role-type-badge">Latar Belakang</span>
+                            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">Sistem Informasi UNHAS</span>
+                        </div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-primary); margin-bottom: 14px;">
+                            Menghubungkan Teori Akademik dengan Solusi Nyata
+                        </h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 14px;">
+                            Halo! Saya Fariz Idham Ramdhani, seorang pengembang perangkat lunak yang berdedikasi menempuh pendidikan Sarjana Komputer di <strong>Program Studi Sistem Informasi, Fakultas MIPA, Universitas Hasanuddin</strong>.
+                        </p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;">
+                            Perjalanan saya berakar dari rasa penasaran mendalam terhadap bagaimana kode dapat menggerakkan sistem dunia nyata. Dari merancang <strong>Warehouse Management System (WMS)</strong> di industri hingga mendampingi mahasiswa sebagai <strong>Asisten Lab Pemrograman Berorientasi Objek (OOP Java)</strong> di UNHAS, saya terus mengasah keahlian di ranah Full-Stack Web, Machine Learning, dan QA Automation.
+                        </p>
+                    </div>
+
+                    <!-- Education Details Box -->
+                    <div style="background: rgba(6, 182, 212, 0.08); border: 1px solid rgba(6, 182, 212, 0.25); border-radius: var(--radius-md); padding: 20px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-primary);">
+                                <i class="fas fa-university" style="color: var(--secondary);"></i> Universitas Hasanuddin (UNHAS)
+                            </h4>
+                            <span style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--secondary);">2023 - 2027</span>
+                        </div>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 10px;">
+                            Sarjana Komputer (S.Kom / B.Tech) • FMIPA Departemen Matematika - Sistem Informasi
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                            <span class="skill-tag-pill">OOP Java</span>
+                            <span class="skill-tag-pill">Data Mining & AI</span>
+                            <span class="skill-tag-pill">Software QA (STQA)</span>
+                            <span class="skill-tag-pill">Web & Mobile Dev</span>
+                            <span class="skill-tag-pill">Database Architecture</span>
                         </div>
                     </div>
-                </section>
-                
-                <section class="skills-section">
-                    <h2><i class="fas fa-tools"></i> Keahlian Saya</h2>
-                    <div class="skills-container">
-                        <div class="skills-category">
-                            <h3><i class="fas fa-code"></i> Programming</h3>
-                            <ul class="skills-list">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                                <li>Node.js</li>
-                                <li>Vite</li>
-                                <li>Python</li>
-                                <li>Java</li>
-                                <li>C</li>
-                                <li>C++</li>
-                                <li>C#</li>
-                            </ul>
-                        </div>
-                        <div class="skills-category">
-                            <h3><i class="fas fa-paint-brush"></i> Design & Media</h3>
-                            <ul class="skills-list">
-                                <li>UI/UX Design</li>
-                                <li>Figma</li>
-                                <li>Video Editing</li>
-                                <li>Game Development (Unity)</li>
-                            </ul>
-                        </div>
-                        <div class="skills-category">
-                            <h3><i class="fas fa-cogs"></i> Lainnya</h3>
-                            <ul class="skills-list">
-                                <li>Data Mining</li>
-                                <li>Machine Learning</li>
-                                <li>Android Development</li>
-                                <li>Discord Moderation</li>
-                                <li>Git</li>
-                                <li>Problem Solving</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                </div>
+            </div>
+
+            <!-- Full Comprehensive Tech Stack Matrix -->
+            <div class="section-header" style="margin-top: 80px; margin-bottom: 40px;">
+                <span class="section-tag"><i class="fas fa-microchip"></i> Technical Arsenal</span>
+                <h2 class="section-title">Matriks Keahlian & Teknologi</h2>
+                <p class="section-subtitle">Peralatan, bahasa, dan framework yang saya gunakan dalam pengembangan harian.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+                <!-- Group 1: Programming Languages -->
+                <div class="spotlight-card">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-primary); margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-code" style="color: var(--secondary);"></i> Bahasa Pemrograman
+                    </h3>
+                    <ul style="display: flex; flex-direction: column; gap: 12px;">
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-js" style="color: #f7df1e; margin-right: 8px;"></i> JavaScript (ES6+)</span>
+                            <span class="role-type-badge">Advanced</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-python" style="color: #38bdf8; margin-right: 8px;"></i> Python</span>
+                            <span class="role-type-badge">Advanced</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-java" style="color: #ea580c; margin-right: 8px;"></i> Java (OOP)</span>
+                            <span class="role-type-badge">Advanced</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-php" style="color: #818cf8; margin-right: 8px;"></i> PHP</span>
+                            <span class="role-type-badge">Intermediate</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-html5" style="color: #f97316; margin-right: 8px;"></i> HTML5 & CSS3</span>
+                            <span class="role-type-badge">Expert</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 2: Web & Mobile Frameworks -->
+                <div class="spotlight-card">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-primary); margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-laptop-code" style="color: var(--primary-light);"></i> Web & Mobile Stack
+                    </h3>
+                    <ul style="display: flex; flex-direction: column; gap: 12px;">
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-react" style="color: #06b6d4; margin-right: 8px;"></i> React.js</span>
+                            <span class="role-type-badge">Advanced</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-laravel" style="color: #ef4444; margin-right: 8px;"></i> Laravel</span>
+                            <span class="role-type-badge">Advanced</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-node-js" style="color: #22c55e; margin-right: 8px;"></i> Node.js & Express</span>
+                            <span class="role-type-badge">Intermediate</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-android" style="color: #10b981; margin-right: 8px;"></i> Android SDK & Java</span>
+                            <span class="role-type-badge">Intermediate</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fas fa-database" style="color: #38bdf8; margin-right: 8px;"></i> MySQL & MongoDB</span>
+                            <span class="role-type-badge">Advanced</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 3: Data Science, QA & Tools -->
+                <div class="spotlight-card">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-primary); margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-vial" style="color: var(--accent-emerald);"></i> QA, AI & Creative
+                    </h3>
+                    <ul style="display: flex; flex-direction: column; gap: 12px;">
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fas fa-robot" style="color: #10b981; margin-right: 8px;"></i> Selenium WebDriver</span>
+                            <span class="role-type-badge">Advanced</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fas fa-check-circle" style="color: #06b6d4; margin-right: 8px;"></i> Cypress E2E Testing</span>
+                            <span class="role-type-badge">Intermediate</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fas fa-brain" style="color: #c084fc; margin-right: 8px;"></i> Time Series & ML</span>
+                            <span class="role-type-badge">Advanced</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fas fa-film" style="color: #ea580c; margin-right: 8px;"></i> Adobe Premiere Pro</span>
+                            <span class="role-type-badge">Expert</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
+                            <span><i class="fab fa-github" style="color: var(--text-primary); margin-right: 8px;"></i> Git & GitHub</span>
+                            <span class="role-type-badge">Advanced</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <footer class="about-footer">
-        <p>© 2025 Fariz Idham R. Hak cipta dilindungi.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Fariz Idham Ramdhani</h3>
+                    <p>Mahasiswa Sistem Informasi Universitas Hasanuddin, Full-Stack Developer, AI Enthusiast, dan Editor Multimedia.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="experience.html">Pengalaman Karir</a></li>
+                        <li><a href="projects.html">Galeri Proyek</a></li>
+                        <li><a href="certificates.html">Sertifikat</a></li>
+                        <li><a href="about.html">Tentang Saya</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Terhubung</h4>
+                    <p style="color:var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;">Makassar, Sulawesi Selatan, Indonesia</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/ReyRiz" target="_blank" class="btn-icon-only" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="btn-icon-only" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <button class="btn-icon-only copy-email-btn" title="Salin Email"><i class="fas fa-envelope"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fariz Idham Ramdhani (ReyRiz). Hak cipta dilindungi.</p>
+                <p>Designed with Deep Space Obsidian & Cyber-Glassmorphism</p>
+            </div>
+        </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+
+    <!-- Data & Master Script -->
+    <script src="assets/js/portfolio-data.js?v=4.0"></script>
+    <script src="assets/js/main.js?v=4.2"></script>
 </body>
 </html>
