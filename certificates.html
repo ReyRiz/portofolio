@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kredensial dan sertifikat profesional Fariz Idham Ramdhani - Sertifikasi Web Development, Data Mining, Software Testing QA, dan Asisten Lab UNHAS.">
-    <title>Sertifikat & Kredensial | Fariz Idham Ramdhani</title>
+    <meta name="description" content="Professional credentials and certificates of Fariz Idham Ramdhani - Web Development, Data Mining, Software Quality Assurance (STQA), and UNHAS Academic Lab Assistance.">
+    <title>Certificates & Credentials | Fariz Idham Ramdhani</title>
     
     <!-- Icons & Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -30,21 +30,27 @@
                 </a>
 
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Beranda</a></li>
-                    <li><a href="experience.html" class="nav-link">Pengalaman</a></li>
-                    <li><a href="projects.html" class="nav-link">Proyek</a></li>
-                    <li><a href="certificates.html" class="nav-link active">Sertifikat</a></li>
-                    <li><a href="about.html" class="nav-link">Tentang</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                    <li><a href="experience.html" class="nav-link" data-i18n="nav_experience">Experience</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="certificates.html" class="nav-link active" data-i18n="nav_certificates">Certificates</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
                 </ul>
 
                 <div class="nav-actions">
-                    <button class="sound-toggle-btn" title="Toggle Efek Suara Sci-Fi" aria-label="Toggle Sound">
+                    <button class="sound-toggle-btn" title="Toggle Sci-Fi Sound Effects" aria-label="Toggle Sound" data-i18n-title="sound_toggle_title">
                         <i class="fas fa-volume-up"></i>
                     </button>
-                    <a href="index.html#contact" class="nav-cta-btn">
-                        <i class="fas fa-paper-plane"></i> Kontak
+                    <!-- Language Toggle EN / ID -->
+                    <button class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language (EN / ID)" data-i18n-title="lang_toggle_title">
+                        <span class="lang-opt lang-opt-en active">EN</span>
+                        <span class="lang-sep">/</span>
+                        <span class="lang-opt lang-opt-id">ID</span>
+                    </button>
+                    <a href="index.html#contact" class="nav-cta-btn" data-i18n="nav_contact">
+                        <i class="fas fa-paper-plane"></i> Contact
                     </a>
-                    <button class="mobile-menu-btn" aria-label="Buka Menu">
+                    <button class="mobile-menu-btn" aria-label="Open Menu" data-i18n-title="open_menu">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
@@ -54,26 +60,35 @@
 
     <!-- Mobile Nav Drawer -->
     <div class="mobile-nav-drawer">
-        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a>
-        <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Pengalaman Karir</a>
-        <a href="projects.html" class="nav-link"><i class="fas fa-laptop-code"></i> Galeri Proyek</a>
-        <a href="certificates.html" class="nav-link active"><i class="fas fa-certificate"></i> Sertifikat</a>
-        <a href="about.html" class="nav-link"><i class="fas fa-user"></i> Tentang Saya</a>
-        <a href="index.html#contact" class="nav-link copy-email-btn"><i class="fas fa-envelope"></i> Salin Email</a>
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav_home">Home</span></a>
+        <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> <span data-i18n="nav_experience">Experience</span></a>
+        <a href="projects.html" class="nav-link"><i class="fas fa-laptop-code"></i> <span data-i18n="nav_projects">Project Gallery</span></a>
+        <a href="certificates.html" class="nav-link active"><i class="fas fa-certificate"></i> <span data-i18n="nav_certificates">Certificates</span></a>
+        <a href="about.html" class="nav-link"><i class="fas fa-user"></i> <span data-i18n="nav_about">About Me</span></a>
+        <a href="index.html#contact" class="nav-link copy-email-btn"><i class="fas fa-envelope"></i> <span data-i18n="nav_copy_email">Copy Email</span></a>
+        
+        <!-- Mobile Language Selector -->
+        <div class="mobile-lang-drawer-row">
+            <span class="mobile-lang-label"><i class="fas fa-globe"></i> Language:</span>
+            <div class="mobile-lang-buttons">
+                <button class="mobile-lang-btn active" data-lang="en">EN</button>
+                <button class="mobile-lang-btn" data-lang="id">ID</button>
+            </div>
+        </div>
     </div>
 
     <main style="padding-top: 130px; padding-bottom: 90px;">
         <div class="container">
             <!-- Page Header -->
             <div class="section-header" style="margin-bottom: 50px;">
-                <span class="section-tag"><i class="fas fa-award"></i> Licenses & Credentials</span>
-                <h1 class="section-title">Sertifikasi & Kredensial</h1>
-                <p class="section-subtitle">
-                    Pengakuan kompetensi dan sertifikasi keahlian dalam rekayasa perangkat lunak, sains data, automasi pengujian (STQA), serta asistensi akademik di Universitas Hasanuddin.
+                <span class="section-tag" data-i18n="cert_page_tag"><i class="fas fa-award"></i> Licenses & Credentials</span>
+                <h1 class="section-title" data-i18n="cert_page_title">Certifications & Credentials</h1>
+                <p class="section-subtitle" data-i18n="cert_page_subtitle">
+                    Recognized competencies and industry certifications spanning software engineering, data science, software testing automation (STQA), and university academic laboratory mentorship at Hasanuddin University.
                 </p>
             </div>
 
-            <!-- Qualification Bento Banner (Inspired by Reference Poster) -->
+            <!-- Qualification Bento Banner -->
             <div class="spotlight-card" style="margin-bottom: 50px; padding: 36px; background: #ffffff; border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 10px 30px rgba(0,0,0,0.04);">
                 <div style="display: grid; grid-template-columns: auto 1fr; gap: 30px; align-items: center;">
                     <div style="width: 80px; height: 80px; border-radius: var(--radius-lg); background: rgba(6, 182, 212, 0.15); border: 1px solid rgba(6, 182, 212, 0.3); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: var(--secondary);">
@@ -81,17 +96,17 @@
                     </div>
                     <div>
                         <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 8px;">
-                            <span class="role-type-badge">Pendidikan Formal</span>
-                            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">2023 - 2027 (Aktif)</span>
+                            <span class="role-type-badge" data-i18n="edu_badge">Formal Education</span>
+                            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);" data-i18n="edu_status">2023 - 2027 (Expected)</span>
                         </div>
-                        <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-primary); margin-bottom: 6px;">
-                            Sarjana Komputer (S.Kom / B.Tech) - Sistem Informasi
+                        <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-primary); margin-bottom: 6px;" data-i18n="edu_degree">
+                            Bachelor of Science (B.S.) in Information Systems
                         </h2>
-                        <p style="color: var(--secondary-light); font-weight: 500; font-size: 1rem; margin-bottom: 10px;">
-                            Universitas Hasanuddin (UNHAS) • Fakultas MIPA, Departemen Matematika
+                        <p style="color: var(--secondary-light); font-weight: 500; font-size: 1rem; margin-bottom: 10px;" data-i18n="edu_dept">
+                            Universitas Hasanuddin (UNHAS) • Faculty of Mathematics and Natural Sciences
                         </p>
-                        <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; max-width: 850px;">
-                            Fokus pada Software Engineering, Basis Data Lanjutan, Pemrograman Berorientasi Objek (Java), Kecerdasan Buatan & Data Mining, serta Kualitas & Pengujian Perangkat Lunak.
+                        <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; max-width: 850px;" data-i18n="edu_desc">
+                            Core focus on Software Engineering, Advanced Database Systems, Object-Oriented Programming (Java), Artificial Intelligence & Data Mining, and Software Quality Assurance (STQA).
                         </p>
                     </div>
                 </div>
@@ -99,15 +114,15 @@
 
             <!-- Certificates Grid Container (Rendered dynamically by main.js) -->
             <div class="cert-grid" id="certificates-grid-container">
-                <!-- Data sertifikat dimuat secara otomatis dari portfolio-data.js -->
+                <!-- Certificate data is loaded dynamically from portfolio-data.js -->
             </div>
 
             <!-- Future-Proof Update Note -->
             <div style="margin-top: 60px; text-align: center;">
                 <div class="spotlight-card" style="padding: 24px; max-width: 680px; margin: 0 auto; display: inline-flex; align-items: center; gap: 16px; text-align: left;">
                     <i class="fas fa-info-circle" style="font-size: 1.6rem; color: var(--secondary); flex-shrink: 0;"></i>
-                    <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">
-                        <strong>Sistem Fleksibel:</strong> Sertifikat baru dari Dicoding, Coursera, atau BNSP dapat ditambahkan kapan saja hanya dengan memasukkan data di <code style="color: var(--secondary); font-family: var(--font-mono);">portfolio-data.js</code> tanpa perlu mengubah file HTML ini.
+                    <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;" data-i18n="cert_note">
+                        <strong>Dynamic Architecture:</strong> New credentials from Dicoding, Coursera, or professional certifying bodies can be added seamlessly via <code style="color: var(--secondary); font-family: var(--font-mono);">portfolio-data.js</code> without modifying this page template.
                     </p>
                 </div>
             </div>
@@ -120,37 +135,38 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>Fariz Idham Ramdhani</h3>
-                    <p>Mahasiswa Sistem Informasi Universitas Hasanuddin, Full-Stack Developer, AI Enthusiast, dan Editor Multimedia.</p>
+                    <p data-i18n="footer_brand_desc">Information Systems undergraduate at Hasanuddin University, Full-Stack Developer, AI Enthusiast, and Digital Multimedia Specialist.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navigasi Cepat</h4>
+                    <h4 data-i18n="footer_quick_links">Quick Links</h4>
                     <ul class="footer-links-list">
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="experience.html">Pengalaman Karir</a></li>
-                        <li><a href="projects.html">Galeri Proyek</a></li>
-                        <li><a href="certificates.html">Sertifikat</a></li>
-                        <li><a href="about.html">Tentang Saya</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="experience.html" data-i18n="nav_experience">Experience</a></li>
+                        <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+                        <li><a href="certificates.html" data-i18n="nav_certificates">Certificates</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Me</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Terhubung</h4>
-                    <p style="color:var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;">Makassar, Sulawesi Selatan, Indonesia</p>
+                    <h4 data-i18n="footer_connect">Connect</h4>
+                    <p style="color:var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;" data-i18n="footer_location">Makassar, South Sulawesi, Indonesia</p>
                     <div class="footer-socials">
                         <a href="https://github.com/ReyRiz" target="_blank" class="btn-icon-only" title="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="btn-icon-only" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <button class="btn-icon-only copy-email-btn" title="Salin Email"><i class="fas fa-envelope"></i></button>
+                        <button class="btn-icon-only copy-email-btn" title="Copy Email" data-i18n-title="nav_copy_email"><i class="fas fa-envelope"></i></button>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Fariz Idham Ramdhani (ReyRiz). Hak cipta dilindungi.</p>
+                <p data-i18n="footer_copyright">&copy; 2026 Fariz Idham Ramdhani (ReyRiz). All rights reserved.</p>
                 <p>Designed with Deep Space Obsidian & Cyber-Glassmorphism</p>
             </div>
         </div>
     </footer>
 
     <!-- Data & Master Script -->
+    <script src="assets/js/i18n.js?v=1.0"></script>
     <script src="assets/js/portfolio-data.js?v=4.0"></script>
     <script src="assets/js/main.js?v=4.2"></script>
 </body>

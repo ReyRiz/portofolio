@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="project-tags">
                             ${project.tags.slice(0, 3).map(tag => `<span>${tag}</span>`).join('')}
                         </div>
-                        <a href="projects/project-detail.html?id=${project.id}" class="project-link">Lihat Detail</a>
+                        <a href="projects/project-detail.html?id=${project.id}" class="project-link">View Details</a>
                     </div>
                 </div>
             `;
@@ -91,12 +91,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function getCategoryDisplayName(category) {
         const categoryMap = {
-            'webdev': 'Pengembangan Web',
-            'mobiledev': 'Pengembangan Mobile',
-            'mobile': 'Pengembangan Mobile',
+            'webdev': 'Web Development',
+            'mobiledev': 'Mobile Development',
+            'mobile': 'Mobile Development',
             'datamining': 'Data Mining',
-            'ai': 'Kecerdasan Buatan',
-            'database': 'Sistem Database'
+            'ai': 'Artificial Intelligence',
+            'database': 'Database Systems'
         };
         
         return categoryMap[category] || category;

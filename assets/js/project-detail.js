@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update the page with project details
     if (project) {
-        document.title = `${project.title} | Your Portfolio`;
+        document.title = `${project.title} | Fariz Idham Ramdhani`;
         
         const projectDetailContainer = document.getElementById('project-detail');
         

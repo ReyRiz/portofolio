@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Proyek | Fariz Idham R.</title>
+    <title>Project Details | Fariz Idham R.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
@@ -14,10 +14,10 @@
                 <a href="../index.html">ReyRiz Portfolio</a>
             </div>
             <ul class="nav-links">
-                <li><a href="../index.html">Beranda</a></li>
-                <li><a href="../projects.html" class="active">Proyek</a></li>
-                <li><a href="../about.html">Tentang</a></li>
-                <li><a href="../index.html#contact">Kontak</a></li>
+                <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="../projects.html" class="active" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="../about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="../index.html#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -27,7 +27,7 @@
     
     <div class="container">
         <a href="../projects.html" class="back-button">
-            <i class="fas fa-arrow-left"></i> Kembali ke Proyek
+            <i class="fas fa-arrow-left"></i> <span data-i18n="back_to_projects">Back to Projects</span>
         </a>
         
         <div class="project-detail-wrapper" id="project-detail">
@@ -40,34 +40,34 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h3>ReyRiz Portfolio</h3>
-                    <p>Menampilkan perjalanan saya di bidang Sistem Informasi</p>
+                    <p data-i18n="footer_brand_desc">Showcasing my journey across Information Systems, AI, and Software Engineering</p>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Tautan Cepat</h4>
+                    <h4 data-i18n="footer_quick_links">Quick Links</h4>
                     <ul>
-                        <li><a href="../index.html">Beranda</a></li>
-                        <li><a href="../projects.html">Proyek</a></li>
-                        <li><a href="../about.html">Tentang</a></li>
-                        <li><a href="../index.html#contact">Kontak</a></li>
+                        <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="../projects.html" data-i18n="nav_projects">Projects</a></li>
+                        <li><a href="../about.html" data-i18n="nav_about">About</a></li>
+                        <li><a href="../index.html#contact" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-social">
-                    <h4>Terhubung Dengan Saya</h4>
+                    <h4 data-i18n="footer_connect">Connect With Me</h4>
                     <div class="social-icons">
-                        <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/ReyRiz" target="_blank" class="social-icon github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/farizidham" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Fariz Idham R. Hak cipta dilindungi.</p>
+                <p data-i18n="footer_copyright">&copy; 2026 Fariz Idham R. All rights reserved.</p>
             </div>
         </div>
     </footer>
+    <script src="../assets/js/i18n.js?v=1.0"></script>
     <script src="../assets/js/project-data.js"></script>
     <script src="../assets/js/project-detail.js"></script>
 </body>

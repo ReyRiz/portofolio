@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tentang Fariz Idham Ramdhani (ReyRiz) - Profil, Filosofi Rekayasa Software, Matriks Keahlian Lengkap, dan Pendidikan Sistem Informasi UNHAS.">
-    <title>Tentang Saya | Fariz Idham Ramdhani</title>
+    <meta name="description" content="About Fariz Idham Ramdhani (ReyRiz) - Profile, Software Engineering Philosophy, Complete Skills Matrix, and Academic Background in Information Systems at UNHAS.">
+    <title>About Me | Fariz Idham Ramdhani</title>
     
     <!-- Icons & Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -30,21 +30,27 @@
                 </a>
 
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Beranda</a></li>
-                    <li><a href="experience.html" class="nav-link">Pengalaman</a></li>
-                    <li><a href="projects.html" class="nav-link">Proyek</a></li>
-                    <li><a href="certificates.html" class="nav-link">Sertifikat</a></li>
-                    <li><a href="about.html" class="nav-link active">Tentang</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                    <li><a href="experience.html" class="nav-link" data-i18n="nav_experience">Experience</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="certificates.html" class="nav-link" data-i18n="nav_certificates">Certificates</a></li>
+                    <li><a href="about.html" class="nav-link active" data-i18n="nav_about">About</a></li>
                 </ul>
 
                 <div class="nav-actions">
-                    <button class="sound-toggle-btn" title="Toggle Efek Suara Sci-Fi" aria-label="Toggle Sound">
+                    <button class="sound-toggle-btn" title="Toggle Sci-Fi Sound Effects" aria-label="Toggle Sound" data-i18n-title="sound_toggle_title">
                         <i class="fas fa-volume-up"></i>
                     </button>
-                    <a href="index.html#contact" class="nav-cta-btn">
-                        <i class="fas fa-paper-plane"></i> Kontak
+                    <!-- Language Toggle EN / ID -->
+                    <button class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language (EN / ID)" data-i18n-title="lang_toggle_title">
+                        <span class="lang-opt lang-opt-en active">EN</span>
+                        <span class="lang-sep">/</span>
+                        <span class="lang-opt lang-opt-id">ID</span>
+                    </button>
+                    <a href="index.html#contact" class="nav-cta-btn" data-i18n="nav_contact">
+                        <i class="fas fa-paper-plane"></i> Contact
                     </a>
-                    <button class="mobile-menu-btn" aria-label="Buka Menu">
+                    <button class="mobile-menu-btn" aria-label="Open Menu" data-i18n-title="open_menu">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
@@ -54,26 +60,35 @@
 
     <!-- Mobile Nav Drawer -->
     <div class="mobile-nav-drawer">
-        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a>
-        <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Pengalaman Karir</a>
-        <a href="projects.html" class="nav-link"><i class="fas fa-laptop-code"></i> Galeri Proyek</a>
-        <a href="certificates.html" class="nav-link"><i class="fas fa-certificate"></i> Sertifikat</a>
-        <a href="about.html" class="nav-link active"><i class="fas fa-user"></i> Tentang Saya</a>
-        <a href="index.html#contact" class="nav-link copy-email-btn"><i class="fas fa-envelope"></i> Salin Email</a>
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav_home">Home</span></a>
+        <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> <span data-i18n="nav_experience">Experience</span></a>
+        <a href="projects.html" class="nav-link"><i class="fas fa-laptop-code"></i> <span data-i18n="nav_projects">Project Gallery</span></a>
+        <a href="certificates.html" class="nav-link"><i class="fas fa-certificate"></i> <span data-i18n="nav_certificates">Certificates</span></a>
+        <a href="about.html" class="nav-link active"><i class="fas fa-user"></i> <span data-i18n="nav_about">About Me</span></a>
+        <a href="index.html#contact" class="nav-link copy-email-btn"><i class="fas fa-envelope"></i> <span data-i18n="nav_copy_email">Copy Email</span></a>
+        
+        <!-- Mobile Language Selector -->
+        <div class="mobile-lang-drawer-row">
+            <span class="mobile-lang-label"><i class="fas fa-globe"></i> Language:</span>
+            <div class="mobile-lang-buttons">
+                <button class="mobile-lang-btn active" data-lang="en">EN</button>
+                <button class="mobile-lang-btn" data-lang="id">ID</button>
+            </div>
+        </div>
     </div>
 
     <main style="padding-top: 130px; padding-bottom: 90px;">
         <div class="container">
             <!-- Page Header -->
             <div class="section-header" style="margin-bottom: 50px;">
-                <span class="section-tag"><i class="fas fa-id-card"></i> Biography & Vision</span>
-                <h1 class="section-title">Tentang Saya & Filosofi</h1>
-                <p class="section-subtitle">
-                    Perjalanan belajar, visi rekayasa teknologi, dan matriks keahlian mendalam.
+                <span class="section-tag" data-i18n="about_page_tag"><i class="fas fa-id-card"></i> Biography & Vision</span>
+                <h1 class="section-title" data-i18n="about_page_title">About Me & Philosophy</h1>
+                <p class="section-subtitle" data-i18n="about_page_subtitle">
+                    Academic journey, engineering vision, and comprehensive technical competencies.
                 </p>
             </div>
 
-            <!-- Bento Editorial Profile Section (Inspired by Poster Reference) -->
+            <!-- Bento Editorial Profile Section -->
             <div class="bento-grid" style="margin-bottom: 60px;">
                 <!-- Left: Big Photo & Persona Card -->
                 <div class="bento-card-profile spotlight-card" style="grid-column: span 5;">
@@ -83,22 +98,22 @@
                             <span class="pulse-dot" style="position: absolute; bottom: 12px; right: 18px; width: 14px; height: 14px;"></span>
                         </div>
                         <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-primary); margin-bottom: 4px;">Fariz Idham Ramdhani</h2>
-                        <p style="color: var(--secondary); font-size: 0.95rem; font-weight: 600;">ReyRiz • Full-Stack Dev & AI Enthusiast</p>
-                        <p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 4px;"><i class="fas fa-map-marker-alt"></i> Universitas Hasanuddin, Makassar</p>
+                        <p style="color: var(--secondary); font-size: 0.95rem; font-weight: 600;" data-i18n="hero_subtitle">ReyRiz • Full-Stack Developer, AI Enthusiast & Video Editor</p>
+                        <p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 4px;"><i class="fas fa-map-marker-alt"></i> Hasanuddin University, Makassar, Indonesia</p>
                     </div>
 
                     <div style="background: rgba(6, 182, 212, 0.04); border: 1px solid rgba(6, 182, 212, 0.18); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px;">
                         <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--secondary-light); margin-bottom: 8px; font-family: var(--font-mono);">
-                            <i class="fas fa-quote-left"></i> Core Principle
+                            <i class="fas fa-quote-left"></i> <span data-i18n="about_core_principle_label">Core Principle</span>
                         </div>
-                        <p style="font-size: 0.9rem; color: var(--text-highlight); font-style: italic; line-height: 1.6;">
-                            "Menggabungkan ketelitian algoritma dengan kepekaan desain visual untuk menciptakan sistem digital yang cepat, andal, dan memecahkan masalah nyata."
+                        <p style="font-size: 0.9rem; color: var(--text-highlight); font-style: italic; line-height: 1.6;" data-i18n="about_core_principle_text">
+                            "Fusing algorithmic precision with thoughtful design sensibility to engineer digital systems that are fast, dependable, and impactful in solving real-world challenges."
                         </p>
                     </div>
 
                     <div style="display: flex; gap: 10px;">
                         <button class="btn btn-primary copy-email-btn" style="flex: 1;">
-                            <i class="fas fa-envelope"></i> Hubungi
+                            <i class="fas fa-envelope"></i> <span data-i18n="nav_contact">Contact Me</span>
                         </button>
                         <a href="https://github.com/ReyRiz" target="_blank" class="btn btn-secondary" style="flex: 1;">
                             <i class="fab fa-github"></i> GitHub
@@ -110,17 +125,17 @@
                 <div class="bento-card-stats spotlight-card" style="grid-column: span 7; display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
                         <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
-                            <span class="role-type-badge">Latar Belakang</span>
-                            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">Sistem Informasi UNHAS</span>
+                            <span class="role-type-badge" data-i18n="about_story_badge">Background</span>
+                            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);" data-i18n="about_story_sub">Information Systems UNHAS</span>
                         </div>
-                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-primary); margin-bottom: 14px;">
-                            Menghubungkan Teori Akademik dengan Solusi Nyata
+                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-primary); margin-bottom: 14px;" data-i18n="about_story_h3">
+                            Bridging Academic Foundations with High-Impact Solutions
                         </h3>
-                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 14px;">
-                            Halo! Saya Fariz Idham Ramdhani, seorang pengembang perangkat lunak yang berdedikasi menempuh pendidikan Sarjana Komputer di <strong>Program Studi Sistem Informasi, Fakultas MIPA, Universitas Hasanuddin</strong>.
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 14px;" data-i18n="about_story_p1">
+                            Hello! I am Fariz Idham Ramdhani, a software developer pursuing my Bachelor of Science (B.S.) in <strong>Information Systems at the Faculty of Mathematics and Natural Sciences, Hasanuddin University</strong>.
                         </p>
-                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;">
-                            Perjalanan saya berakar dari rasa penasaran mendalam terhadap bagaimana kode dapat menggerakkan sistem dunia nyata. Dari merancang <strong>Warehouse Management System (WMS)</strong> di industri hingga mendampingi mahasiswa sebagai <strong>Asisten Lab Pemrograman Berorientasi Objek (OOP Java)</strong> di UNHAS, saya terus mengasah keahlian di ranah Full-Stack Web, Machine Learning, dan QA Automation.
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;" data-i18n="about_story_p2">
+                            My journey is driven by a deep fascination with how elegant code powers scalable real-world systems. From engineering industry-grade <strong>Warehouse Management Systems (WMS)</strong> to mentoring undergraduates as an <strong>Academic Laboratory Assistant for Object-Oriented Programming (OOP Java)</strong> at UNHAS, I continually refine my craftsmanship across Full-Stack Web, Machine Learning, and QA Automation.
                         </p>
                     </div>
 
@@ -132,8 +147,8 @@
                             </h4>
                             <span style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--secondary);">2023 - 2027</span>
                         </div>
-                        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 10px;">
-                            Sarjana Komputer (S.Kom / B.Tech) • FMIPA Departemen Matematika - Sistem Informasi
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 10px;" data-i18n="about_edu_dept">
+                            Bachelor of Science (B.S.) • Faculty of Mathematics & Natural Sciences - Information Systems
                         </p>
                         <div style="display: flex; flex-wrap: wrap; gap: 6px;">
                             <span class="skill-tag-pill">OOP Java</span>
@@ -148,16 +163,16 @@
 
             <!-- Full Comprehensive Tech Stack Matrix -->
             <div class="section-header" style="margin-top: 80px; margin-bottom: 40px;">
-                <span class="section-tag"><i class="fas fa-microchip"></i> Technical Arsenal</span>
-                <h2 class="section-title">Matriks Keahlian & Teknologi</h2>
-                <p class="section-subtitle">Peralatan, bahasa, dan framework yang saya gunakan dalam pengembangan harian.</p>
+                <span class="section-tag" data-i18n="about_matrix_tag"><i class="fas fa-microchip"></i> Technical Arsenal</span>
+                <h2 class="section-title" data-i18n="about_matrix_title">Skills Matrix & Technologies</h2>
+                <p class="section-subtitle" data-i18n="about_matrix_subtitle">Core languages, enterprise frameworks, and engineering tools in my daily workflow.</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
                 <!-- Group 1: Programming Languages -->
                 <div class="spotlight-card">
                     <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-primary); margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
-                        <i class="fas fa-code" style="color: var(--secondary);"></i> Bahasa Pemrograman
+                        <i class="fas fa-code" style="color: var(--secondary);"></i> <span data-i18n="skills_grp1">Programming Languages</span>
                     </h3>
                     <ul style="display: flex; flex-direction: column; gap: 12px;">
                         <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
@@ -186,7 +201,7 @@
                 <!-- Group 2: Web & Mobile Frameworks -->
                 <div class="spotlight-card">
                     <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-primary); margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
-                        <i class="fas fa-laptop-code" style="color: var(--primary-light);"></i> Web & Mobile Stack
+                        <i class="fas fa-laptop-code" style="color: var(--primary-light);"></i> <span data-i18n="skills_grp2">Web & Mobile Stack</span>
                     </h3>
                     <ul style="display: flex; flex-direction: column; gap: 12px;">
                         <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
@@ -215,7 +230,7 @@
                 <!-- Group 3: Data Science, QA & Tools -->
                 <div class="spotlight-card">
                     <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-primary); margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
-                        <i class="fas fa-vial" style="color: var(--accent-emerald);"></i> QA, AI & Creative
+                        <i class="fas fa-vial" style="color: var(--accent-emerald);"></i> <span data-i18n="skills_grp3">QA, AI & Creative Tools</span>
                     </h3>
                     <ul style="display: flex; flex-direction: column; gap: 12px;">
                         <li style="display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-highlight);">
@@ -250,37 +265,38 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>Fariz Idham Ramdhani</h3>
-                    <p>Mahasiswa Sistem Informasi Universitas Hasanuddin, Full-Stack Developer, AI Enthusiast, dan Editor Multimedia.</p>
+                    <p data-i18n="footer_brand_desc">Information Systems undergraduate at Hasanuddin University, Full-Stack Developer, AI Enthusiast, and Digital Multimedia Specialist.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navigasi Cepat</h4>
+                    <h4 data-i18n="footer_quick_links">Quick Links</h4>
                     <ul class="footer-links-list">
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="experience.html">Pengalaman Karir</a></li>
-                        <li><a href="projects.html">Galeri Proyek</a></li>
-                        <li><a href="certificates.html">Sertifikat</a></li>
-                        <li><a href="about.html">Tentang Saya</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="experience.html" data-i18n="nav_experience">Experience</a></li>
+                        <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+                        <li><a href="certificates.html" data-i18n="nav_certificates">Certificates</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Me</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Terhubung</h4>
-                    <p style="color:var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;">Makassar, Sulawesi Selatan, Indonesia</p>
+                    <h4 data-i18n="footer_connect">Connect</h4>
+                    <p style="color:var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;" data-i18n="footer_location">Makassar, South Sulawesi, Indonesia</p>
                     <div class="footer-socials">
                         <a href="https://github.com/ReyRiz" target="_blank" class="btn-icon-only" title="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="btn-icon-only" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <button class="btn-icon-only copy-email-btn" title="Salin Email"><i class="fas fa-envelope"></i></button>
+                        <button class="btn-icon-only copy-email-btn" title="Copy Email" data-i18n-title="nav_copy_email"><i class="fas fa-envelope"></i></button>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Fariz Idham Ramdhani (ReyRiz). Hak cipta dilindungi.</p>
+                <p data-i18n="footer_copyright">&copy; 2026 Fariz Idham Ramdhani (ReyRiz). All rights reserved.</p>
                 <p>Designed with Deep Space Obsidian & Cyber-Glassmorphism</p>
             </div>
         </div>
     </footer>
 
     <!-- Data & Master Script -->
+    <script src="assets/js/i18n.js?v=1.0"></script>
     <script src="assets/js/portfolio-data.js?v=4.0"></script>
     <script src="assets/js/main.js?v=4.2"></script>
 </body>

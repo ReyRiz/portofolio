@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Galeri lengkap karya dan proyek rekayasa perangkat lunak, sistem AI & pengujian software oleh Fariz Idham Ramdhani (ReyRiz).">
-    <title>Galeri Proyek | Fariz Idham Ramdhani</title>
+    <meta name="description" content="Comprehensive gallery of software engineering, AI systems, and QA automation projects by Fariz Idham Ramdhani (ReyRiz).">
+    <title>Project Gallery | Fariz Idham Ramdhani</title>
     
     <!-- Icons & Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -30,21 +30,27 @@
                 </a>
 
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Beranda</a></li>
-                    <li><a href="experience.html" class="nav-link">Pengalaman</a></li>
-                    <li><a href="projects.html" class="nav-link active">Proyek</a></li>
-                    <li><a href="certificates.html" class="nav-link">Sertifikat</a></li>
-                    <li><a href="about.html" class="nav-link">Tentang</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                    <li><a href="experience.html" class="nav-link" data-i18n="nav_experience">Experience</a></li>
+                    <li><a href="projects.html" class="nav-link active" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="certificates.html" class="nav-link" data-i18n="nav_certificates">Certificates</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
                 </ul>
 
                 <div class="nav-actions">
-                    <button class="sound-toggle-btn" title="Toggle Efek Suara Sci-Fi" aria-label="Toggle Sound">
+                    <button class="sound-toggle-btn" title="Toggle Sci-Fi Sound FX" aria-label="Toggle Sound" data-i18n-title="sound_toggle_title">
                         <i class="fas fa-volume-up"></i>
                     </button>
-                    <a href="index.html#contact" class="nav-cta-btn">
-                        <i class="fas fa-paper-plane"></i> Kontak
+                    <!-- Language Toggle EN / ID -->
+                    <button class="lang-toggle-btn" aria-label="Toggle Language" title="Switch Language (EN / ID)" data-i18n-title="lang_toggle_title">
+                        <span class="lang-opt lang-opt-en active">EN</span>
+                        <span class="lang-sep">/</span>
+                        <span class="lang-opt lang-opt-id">ID</span>
+                    </button>
+                    <a href="index.html#contact" class="nav-cta-btn" data-i18n="nav_contact">
+                        <i class="fas fa-paper-plane"></i> Contact
                     </a>
-                    <button class="mobile-menu-btn" aria-label="Buka Menu">
+                    <button class="mobile-menu-btn" aria-label="Open Menu" data-i18n-title="open_menu">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
@@ -54,49 +60,58 @@
 
     <!-- Mobile Nav Drawer -->
     <div class="mobile-nav-drawer">
-        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a>
-        <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Pengalaman Karir</a>
-        <a href="projects.html" class="nav-link active"><i class="fas fa-laptop-code"></i> Galeri Proyek</a>
-        <a href="certificates.html" class="nav-link"><i class="fas fa-certificate"></i> Sertifikat</a>
-        <a href="about.html" class="nav-link"><i class="fas fa-user"></i> Tentang Saya</a>
-        <a href="index.html#contact" class="nav-link copy-email-btn"><i class="fas fa-envelope"></i> Salin Email</a>
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav_home">Home</span></a>
+        <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> <span data-i18n="nav_experience">Experience</span></a>
+        <a href="projects.html" class="nav-link active"><i class="fas fa-laptop-code"></i> <span data-i18n="nav_projects">Project Gallery</span></a>
+        <a href="certificates.html" class="nav-link"><i class="fas fa-certificate"></i> <span data-i18n="nav_certificates">Certificates</span></a>
+        <a href="about.html" class="nav-link"><i class="fas fa-user"></i> <span data-i18n="nav_about">About Me</span></a>
+        <a href="index.html#contact" class="nav-link copy-email-btn"><i class="fas fa-envelope"></i> <span data-i18n="nav_copy_email">Copy Email</span></a>
+        
+        <!-- Mobile Language Selector -->
+        <div class="mobile-lang-drawer-row">
+            <span class="mobile-lang-label"><i class="fas fa-globe"></i> Language:</span>
+            <div class="mobile-lang-buttons">
+                <button class="mobile-lang-btn active" data-lang="en">EN</button>
+                <button class="mobile-lang-btn" data-lang="id">ID</button>
+            </div>
+        </div>
     </div>
 
     <main style="padding-top: 130px; padding-bottom: 90px;">
         <div class="container">
             <!-- Page Header -->
             <div class="section-header" style="margin-bottom: 45px;">
-                <span class="section-tag"><i class="fas fa-layer-group"></i> Works & Research</span>
-                <h1 class="section-title">Galeri Proyek Lengkap</h1>
-                <p class="section-subtitle">
-                    Koleksi aplikasi web, sistem mobile, model analitik AI, dan arsitektur pengujian kualitas software (STQA).
+                <span class="section-tag" data-i18n="projects_page_tag"><i class="fas fa-layer-group"></i> Works & Research</span>
+                <h1 class="section-title" data-i18n="projects_page_title">Complete Project Gallery</h1>
+                <p class="section-subtitle" data-i18n="projects_page_subtitle">
+                    A curated collection of web applications, mobile systems, predictive AI models, and software testing architectures (STQA).
                 </p>
             </div>
 
             <!-- Filter & Live Search Bar -->
             <div class="projects-filter-bar">
                 <div class="filter-pills">
-                    <button class="filter-btn active" data-category="all">Semua Proyek (10+)</button>
-                    <button class="filter-btn" data-category="webdev"><i class="fas fa-globe"></i> Web Dev</button>
-                    <button class="filter-btn" data-category="mobiledev"><i class="fas fa-mobile-alt"></i> Mobile App</button>
-                    <button class="filter-btn" data-category="datamining"><i class="fas fa-brain"></i> Data & AI</button>
-                    <button class="filter-btn" data-category="stqa"><i class="fas fa-vial"></i> QA & Testing</button>
+                    <button class="filter-btn active" data-category="all" data-i18n="filter_all">All Projects</button>
+                    <button class="filter-btn" data-category="webdev"><i class="fas fa-globe"></i> <span data-i18n="filter_web">Web Dev</span></button>
+                    <button class="filter-btn" data-category="mobiledev"><i class="fas fa-mobile-alt"></i> <span data-i18n="filter_mobile">Mobile App</span></button>
+                    <button class="filter-btn" data-category="datamining"><i class="fas fa-brain"></i> <span data-i18n="filter_ai">Data & AI</span></button>
+                    <button class="filter-btn" data-category="stqa"><i class="fas fa-vial"></i> <span data-i18n="filter_qa">QA & Testing</span></button>
                 </div>
 
                 <div class="projects-search-wrapper">
                     <i class="fas fa-search projects-search-icon"></i>
-                    <input type="text" id="project-search-input" class="projects-search-input" placeholder="Cari nama, stack, atau deskripsi..." autocomplete="off">
+                    <input type="text" id="project-search-input" class="projects-search-input" placeholder="Search projects by title, technology, or keywords..." data-i18n-placeholder="search_placeholder" autocomplete="off">
                 </div>
             </div>
 
             <!-- Dynamic Projects Grid (Auto-rendered by main.js with spotlight glow & modal trigger) -->
             <div class="projects-grid" id="full-projects-container">
-                <!-- Proyek dimuat secara dinamis dari portfolio-data.js -->
+                <!-- Projects loaded dynamically from portfolio-data.js -->
             </div>
 
             <!-- Info Bar -->
             <div style="margin-top: 60px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
-                <p>Klik kartu proyek mana pun untuk membuka popup detail interaktif, rincian tantangan, dan tautan repositori.</p>
+                <p data-i18n="projects_modal_hint">Click any project card to open an interactive modal with technical specs, engineering challenges, and repository links.</p>
             </div>
         </div>
     </main>
@@ -107,37 +122,38 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>Fariz Idham Ramdhani</h3>
-                    <p>Mahasiswa Sistem Informasi Universitas Hasanuddin, Full-Stack Developer, AI Enthusiast, dan Editor Multimedia.</p>
+                    <p data-i18n="footer_brand_desc">Information Systems undergraduate at Hasanuddin University, Full-Stack Developer, AI Enthusiast, and Digital Multimedia Specialist.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navigasi Cepat</h4>
+                    <h4 data-i18n="footer_quick_links">Quick Navigation</h4>
                     <ul class="footer-links-list">
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="experience.html">Pengalaman Karir</a></li>
-                        <li><a href="projects.html">Galeri Proyek</a></li>
-                        <li><a href="certificates.html">Sertifikat</a></li>
-                        <li><a href="about.html">Tentang Saya</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="experience.html" data-i18n="nav_experience">Career Experience</a></li>
+                        <li><a href="projects.html" data-i18n="nav_projects">Project Gallery</a></li>
+                        <li><a href="certificates.html" data-i18n="nav_certificates">Certificates</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Me</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Terhubung</h4>
-                    <p style="color:var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;">Makassar, Sulawesi Selatan, Indonesia</p>
+                    <h4 data-i18n="footer_connect">Connect</h4>
+                    <p style="color:var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;" data-i18n="footer_location">Makassar, South Sulawesi, Indonesia</p>
                     <div class="footer-socials">
                         <a href="https://github.com/ReyRiz" target="_blank" class="btn-icon-only" title="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/farizidham/" target="_blank" class="btn-icon-only" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <button class="btn-icon-only copy-email-btn" title="Salin Email"><i class="fas fa-envelope"></i></button>
+                        <button class="btn-icon-only copy-email-btn" title="Copy Email" data-i18n-title="nav_copy_email"><i class="fas fa-envelope"></i></button>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Fariz Idham Ramdhani (ReyRiz). Hak cipta dilindungi.</p>
+                <p data-i18n="footer_copyright">&copy; 2026 Fariz Idham Ramdhani (ReyRiz). All rights reserved.</p>
                 <p>Designed with Deep Space Obsidian & Cyber-Glassmorphism</p>
             </div>
         </div>
     </footer>
 
     <!-- Data & Master Script -->
+    <script src="assets/js/i18n.js?v=1.0"></script>
     <script src="assets/js/portfolio-data.js?v=4.0"></script>
     <script src="assets/js/main.js?v=4.2"></script>
 </body>
